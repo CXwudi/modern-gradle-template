@@ -2,6 +2,10 @@ plugins {
   id("my-java-base")
   id("org.springframework.boot") apply false
   id("io.spring.dependency-management") apply false
+  // io.spring.dependency-management is probably not needed since it just adds back the maven dependency management,
+  // but gradle 5+ has platform type which acts like maven dependency management,
+  // and we already imported spring bom there.
+  // see https://stackoverflow.com/questions/57717042/do-we-need-io-spring-dependency-management-gradle-plugin-when-already-using-id
 }
 
 configurations {
