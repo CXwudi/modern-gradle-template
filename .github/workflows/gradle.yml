@@ -28,6 +28,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: gradle # using github official caching strategy
         
     - name: Give permission to gradlew
       run: chmod +x gradlew
@@ -39,3 +40,4 @@ jobs:
          # as this template project will change the build file frequenctly, 
          # application project should delete this --rerun-tasks
         arguments: build check --rerun-tasks
+        cache-disabled: true # it looks like it can't detect some changes, for example, version catalog, and causing changes not being picked up
