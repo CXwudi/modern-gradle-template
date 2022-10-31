@@ -1,0 +1,9 @@
+[versions] # caustion: script plugins in gradle/plugins can not read version catalog
+# find java version defined in my-java-base.gradle.kts
+kotlin = "1.7.20"
+springBoot = "2.7.5"
+springDependencyManagement = "1.0.15.RELEASE"
+kotest = "5.5.3"
+kotestSpring = "1.1.2"
+springMockk = "3.1.1"
+kInlineLogging = "1.0.1"
