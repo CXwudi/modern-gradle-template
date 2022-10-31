@@ -2,7 +2,9 @@
 # find java version defined in my-java-base.gradle.kts
 kotlin = "1.7.20"
 springBoot = "2.7.5"
-springDependencyManagement = "1.0.14.RELEASE" # 1.0.15 doesn't exist in gradle plugin portal...
+springDependencyManagement = "1.1.0" # 1.0.15 doesn't exist in gradle plugin portal...
+# we could used the older version, but it may cause issue with newer spring boot gradle plugin,
+# in fact spring boot gradle plugin will use the defined version of spring dependency management plugin
 kotest = "5.5.3"
 kotestSpring = "1.1.2"
 springMockk = "3.1.1"
