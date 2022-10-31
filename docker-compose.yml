@@ -1,0 +1,12 @@
+version: '3.8'
+
+# run docker-compose up to start building and testing this gradle project from very very fresh state.
+# optionally you can delete .gradle folder
+services:
+  gradle:
+    image: gradle:jdk17-alpine
+    container_name: gradle-build
+    volumes:
+      - .:/home/gradle/project
+    working_dir: /home/gradle/project
+    command: gradle clean build test
