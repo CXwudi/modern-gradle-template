@@ -25,7 +25,3 @@ tasks.withType<KotlinCompile> {
     // without jvmTarget, by default will be java toolchain version
   }
 }
-
-tasks.withType<Test> {
-  useJUnitPlatform()
-}
