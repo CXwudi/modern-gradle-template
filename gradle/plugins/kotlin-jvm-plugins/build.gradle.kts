@@ -5,6 +5,6 @@ plugins {
 dependencies {
   val kotlinVersion = libs.versions.kotlin.get()
   implementation(project(":java-plugins"))
-  api("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-  api("org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion")
+  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+  implementation("org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion")
 }
