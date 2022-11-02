@@ -21,4 +21,4 @@ rootProject.name = "gradle-learn-project"
 
 include("lib")
 include("app")
-// include("spring-app")
+include("spring-app")
