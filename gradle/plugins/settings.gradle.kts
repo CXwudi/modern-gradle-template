@@ -13,6 +13,7 @@ dependencyResolutionManagement {
   }
 }
 
+include("root-plugins")
 include("java-plugins")
-// include("kotlin-jvm-plugins")
+include("kotlin-jvm-plugins")
 // include("spring-plugins")

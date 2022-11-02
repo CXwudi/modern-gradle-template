@@ -1,5 +1,5 @@
 plugins {
-  id("my-kotlin-jvm-app")
+  id("my.kotlin-jvm-app")
 }
 
 dependencies {

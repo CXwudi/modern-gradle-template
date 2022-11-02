@@ -1,3 +1,6 @@
+/**
+ * The root plugin only defines the java version, dependency version constraints and a new configuration called [annotationProcessorAndCompileOnly].
+ */
 plugins {
   java
 }
