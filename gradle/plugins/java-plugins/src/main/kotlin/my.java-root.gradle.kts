@@ -1,5 +1,5 @@
 plugins {
-  id("java")
+  java
 }
 
 java {
@@ -48,13 +48,4 @@ dependencies {
   // annotationProcessor unfortunately does not extend from implementation, nor should it be.
   // so we manually add the platform in, see https://docs.gradle.org/current/userguide/java_plugin.html#tab:configurations
   annotationProcessor(platform("poc.cx.glp:version-constraints"))
-
-  annotationProcessorAndCompileOnly("org.projectlombok:lombok")
-
-  testImplementation("org.junit.jupiter:junit-jupiter-api") // api is needed in both compile and runtime
-  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine") // but the engine is only needed at runtime
-}
-
-tasks.withType<Test> {
-  useJUnitPlatform()
 }

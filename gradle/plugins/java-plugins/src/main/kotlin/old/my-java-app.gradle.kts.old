@@ -1,7 +1,9 @@
-plugins {
-  id("application")
-  id("my-java-base")
-}
+package old
+
+//plugins {
+//  id("application")
+//  id("my-java-base")
+//}
 
 // tasks.register<JarCount>("countJars") {
 //  group = "My Task Group"

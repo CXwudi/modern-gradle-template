@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 include("java-plugins")
-include("kotlin-jvm-plugins")
-include("spring-plugins")
+// include("kotlin-jvm-plugins")
+// include("spring-plugins")
