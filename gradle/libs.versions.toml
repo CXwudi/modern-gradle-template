@@ -1,5 +1,18 @@
-[versions] # caustion: precompiled script plugins in src directory in gradle/plugins can not read version catalog
-# find java version defined in my-java-base.gradle.kts
+# version catalog can be used in any gradle build, simply add
+#
+# dependencyResolutionManagement {
+#   versionCatalogs {
+#     create("libs") {
+#       from(files("path/to/libs.versions.toml"))
+#     }
+#   }
+# }
+#
+# to settings.gradle.kts to include the version catalog in your build.
+# any settings.gradle.kts works!
+# see https://docs.gradle.org/current/userguide/platforms.html#sec:sharing-catalogs for more details
+[versions]
+# java version is defined in my-java-base.gradle.kts
 kotlin = "1.7.20"
 springBoot = "2.7.5"
 springDependencyManagement = "1.0.15.RELEASE"

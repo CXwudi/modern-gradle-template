@@ -3,8 +3,9 @@ plugins {
 }
 
 dependencies {
+  implementation(platform("poc.cx.glp:version-constraints"))
 //  implementation(project(":java-plugins"))
   implementation(project(":kotlin-jvm-plugins"))
-  implementation("org.springframework.boot:spring-boot-gradle-plugin:${libs.versions.springBoot.get()}")
-  implementation("io.spring.gradle:dependency-management-plugin:${libs.versions.springDependencyManagement.get()}")
+  implementation("org.springframework.boot:spring-boot-gradle-plugin")
+  implementation("io.spring.gradle:dependency-management-plugin")
 }

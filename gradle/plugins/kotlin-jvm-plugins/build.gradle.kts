@@ -3,8 +3,8 @@ plugins {
 }
 
 dependencies {
-  val kotlinVersion = libs.versions.kotlin.get()
+  implementation(platform("poc.cx.glp:version-constraints"))
   implementation(project(":java-plugins"))
-  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-  implementation("org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion")
+  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
+  implementation("org.jetbrains.kotlin:kotlin-allopen")
 }
