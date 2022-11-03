@@ -29,5 +29,6 @@ dependencies {
     api("com.github.CXwudi:kotlin-jvm-inline-logging:${libs.versions.kInlineLogging.get()}")
     api("io.kotest.extensions:kotest-extensions-spring:${libs.versions.kotestSpring.get()}")
     api("com.ninja-squad:springmockk:${libs.versions.springMockk.get()}")
+    api("io.freefair.lombok:io.freefair.lombok.gradle.plugin:${libs.versions.freefairPlugins.get()}")
   }
 }

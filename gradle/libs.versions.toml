@@ -20,3 +20,4 @@ kotest = "5.5.3"
 kotestSpring = "1.1.2"
 springMockk = "3.1.1"
 kInlineLogging = "1.0.1"
+freefairPlugins = "6.5.1" # used for including a lombok plugin

@@ -52,4 +52,6 @@ dependencies {
   // annotationProcessor unfortunately does not extend from implementation, nor should it be.
   // so we manually add the platform in, see https://docs.gradle.org/current/userguide/java_plugin.html#tab:configurations
   annotationProcessor(platform("poc.cx.glp:version-constraints"))
+  annotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
+  testAnnotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
 }
