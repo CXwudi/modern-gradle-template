@@ -2,9 +2,9 @@ plugins {
   id("my.java-root")
   // note: the spring-boot-gradle-plugin is not applied as it is for setting up the spring-app,
   // but here we are setting up the spring mixin,
-  // so only adding the dependency-management plugin and some common spring-boot-starter dependencies
-  // in fact, even the dependency-management plugin is optional, as we already applied our own platform
-  // which included the bom of spring-boot
+  // so only adding the dependency-management plugin and some common spring-boot-starter dependencies.
+  // in fact, even the dependency-management plugin is optional, since our own 'version-constraints' platform
+  // already included the bom of spring-boot
   id("io.spring.dependency-management")
 }
 
