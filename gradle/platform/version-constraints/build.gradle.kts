@@ -24,11 +24,11 @@ dependencies {
     api("org.jetbrains.kotlin:kotlin-allopen:${libs.versions.kotlin.get()}")
     api("org.springframework.boot:spring-boot-gradle-plugin:${libs.versions.springBoot.get()}")
     api("io.spring.gradle:dependency-management-plugin:${libs.versions.springDependencyManagement.get()}")
+    api("io.freefair.lombok:io.freefair.lombok.gradle.plugin:${libs.versions.freefairPlugins.get()}")
 
     // main build dependencies, be used in the actual app and lib build.gradle.kts
     api("com.github.CXwudi:kotlin-jvm-inline-logging:${libs.versions.kInlineLogging.get()}")
     api("io.kotest.extensions:kotest-extensions-spring:${libs.versions.kotestSpring.get()}")
     api("com.ninja-squad:springmockk:${libs.versions.springMockk.get()}")
-    api("io.freefair.lombok:io.freefair.lombok.gradle.plugin:${libs.versions.freefairPlugins.get()}")
   }
 }
