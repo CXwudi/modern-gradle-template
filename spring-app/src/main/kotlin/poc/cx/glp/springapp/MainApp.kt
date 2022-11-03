@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 import poc.cx.glp.lib.OldMessageModel
 
 /**
- * @date 2022-10-29
+ * 2022-10-29
  * @author CX无敌
  */
 @SpringBootApplication

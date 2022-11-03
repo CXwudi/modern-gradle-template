@@ -6,7 +6,7 @@ import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.tasks.*
 
 /**
- * @date 2022-10-28
+ * 2022-10-28
  * @author CX无敌
  */
 // gradle will implement this class
