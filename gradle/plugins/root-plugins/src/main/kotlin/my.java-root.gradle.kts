@@ -45,9 +45,9 @@ configurations {
 }
 
 dependencies {
-  // you can import our platform even it is defined outside of plugins
-  // because eventually this script plugin is added into the actual building script,
-  // the actual building is including the build of the platform, which is defined in the root settings.gradle.kts
+  // you can import our platform even if the platform itself is not included in this gradle/plugins build project
+  // because the actual main project which uses this plugin,
+  // which has the root settings.gradle.kts includeBuild("our platform"), can resolve it.
   implementation(platform("poc.cx.glp:version-constraints"))
   // annotationProcessor unfortunately does not extend from implementation, nor should it be.
   // so we manually add the platform in, see https://docs.gradle.org/current/userguide/java_plugin.html#tab:configurations
