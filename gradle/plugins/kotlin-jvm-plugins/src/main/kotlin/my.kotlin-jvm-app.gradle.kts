@@ -1,5 +1,5 @@
 plugins {
   id("my.kotlin-jvm-mixin")
   id("my.kotest-jvm-mixin")
-  application
+  id("my.app-mixin")
 }
