@@ -1,8 +1,7 @@
-package old
 
-//plugins {
-//  id("java")
-//}
+plugins {
+  id("java")
+}
 
 java {
   toolchain {
