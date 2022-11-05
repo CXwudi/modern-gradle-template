@@ -1,5 +1,5 @@
 plugins {
-  id("my.spring-boot-mixin")
+  // so far this plugin just add
   id("org.springframework.boot")
   // optional, can be used to distribute build scripts for click and run.
   // but need to set applications.mainClass explicitly in build.gradle.kts

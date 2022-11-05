@@ -17,7 +17,7 @@ configurations {
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter")
   implementation("org.springframework.boot:spring-boot-starter-log4j2")
-  annotationProcessorAndCompileOnly("org.springframework.boot:spring-boot-configuration-processor") // see my-java-base what has been done instead
+  // annotationProcessor("org.springframework.boot:spring-boot-configuration-processor") // should let main build decide to include or not
   // with spring boot, you are pretty much fixed to use spring-boot-starter-test, which uses junit 5,
   // so don't bother extracting spring-boot-starter-test to a separate mixin...
   testImplementation("org.springframework.boot:spring-boot-starter-test")

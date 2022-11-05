@@ -34,15 +34,15 @@ tasks.withType<JavaCompile>().configureEach {
  *
  * Otherwise, any dependency that is only needed as annotation processor, like mapstruct, should go to [annotationProcessor] only.
  */
-val annotationProcessorAndCompileOnly: Configuration by configurations.creating
-val testAnnotationProcessorAndCompileOnly: Configuration by configurations.creating
-configurations {
-  compileOnly.get().extendsFrom(annotationProcessorAndCompileOnly)
-  annotationProcessor.get().extendsFrom(annotationProcessorAndCompileOnly)
-  testCompileOnly.get().extendsFrom(testAnnotationProcessorAndCompileOnly)
-  testAnnotationProcessor.get().extendsFrom(testAnnotationProcessorAndCompileOnly)
-  // if a customized source set is added, we need to add the same logic to it
-}
+// val annotationProcessorAndCompileOnly: Configuration by configurations.creating
+// val testAnnotationProcessorAndCompileOnly: Configuration by configurations.creating
+// configurations {
+//   compileOnly.get().extendsFrom(annotationProcessorAndCompileOnly)
+//   annotationProcessor.get().extendsFrom(annotationProcessorAndCompileOnly)
+//   testCompileOnly.get().extendsFrom(testAnnotationProcessorAndCompileOnly)
+//   testAnnotationProcessor.get().extendsFrom(testAnnotationProcessorAndCompileOnly)
+//   // if a customized source set is added, we need to add the same logic to it
+// }
 
 dependencies {
   // you can import our platform even if the platform itself is not included in this gradle/plugins build project
@@ -52,6 +52,6 @@ dependencies {
   // annotationProcessor unfortunately does not extend from implementation, nor should it be.
   // so we manually add the platform in, see https://docs.gradle.org/current/userguide/java_plugin.html#tab:configurations
   annotationProcessor(platform("poc.cx.glp:version-constraints"))
-  annotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
-  testAnnotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
+  // annotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
+  // testAnnotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
 }
