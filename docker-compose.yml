@@ -8,5 +8,8 @@ services:
     container_name: gradle-build
     volumes:
       - .:/home/gradle/project
+    environment:
+      - UID=1000
+      - GID=1000
     working_dir: /home/gradle/project
     command: gradle clean build test
