@@ -13,11 +13,13 @@
 # see https://docs.gradle.org/current/userguide/platforms.html#sec:sharing-catalogs for more details
 [versions]
 # java version is defined in my-java-base.gradle.kts
+# lib versions
 kotlin = "1.7.20"
 springBoot = "2.7.5"
-springDependencyManagement = "1.0.15.RELEASE"
 kotest = "5.5.3"
 kotestSpring = "1.1.2"
 springMockk = "3.1.1"
+# plugin versions
+springDependencyManagement = "1.0.15.RELEASE"
 kInlineLogging = "1.0.1"
 freefairPlugins = "6.5.1" # used for including a lombok plugin
