@@ -26,6 +26,8 @@ include("mixin:kotest-jvm")
 // the conventions, main builds should depend on these
 include("convention:java-app")
 include("convention:java-lib")
+include("convention:kotlin-app")
+include("convention:kotlin-lib")
 // include("java-plugins")
 // include("kotlin-jvm-plugins")
 // include("spring-plugins:java")
