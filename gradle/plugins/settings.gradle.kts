@@ -25,6 +25,7 @@ include("mixin:kotlin-jvm")
 include("mixin:kotest-jvm")
 include("mixin:spring-boot")
 include("mixin:spring-boot-app")
+include("mixin:spring-boot-kotlin")
 // the conventions, main builds should depend on these
 include("convention:java-app")
 include("convention:java-lib")
