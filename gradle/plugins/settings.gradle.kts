@@ -13,6 +13,8 @@ dependencyResolutionManagement {
   }
 }
 
+// current grouping strategy: group by dependencies used by a module. 
+// e.g. kotlin-jvm-plugins introduced kotlin plugin dependencies
 include("root-plugins")
 include("java-plugins")
 include("kotlin-jvm-plugins")
