@@ -1,5 +1,5 @@
 plugins {
-  id("my.java-root")
+  id("my.jvm-root")
   id("io.freefair.lombok") // using a dedicated community lombok plugin from https://plugins.gradle.org/plugin/io.freefair.lombok
 }
 

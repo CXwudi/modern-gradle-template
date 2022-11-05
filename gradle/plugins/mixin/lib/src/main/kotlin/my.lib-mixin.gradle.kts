@@ -1,5 +1,5 @@
 plugins {
-  id("my.java-root")
+  id("my.jvm-root")
   `java-library`
 }
 

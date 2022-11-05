@@ -1,5 +1,5 @@
 plugins {
-  id("my.java-root")
+  id("my.jvm-root")
   // note: the spring-boot-gradle-plugin is not applied as it is for setting up the spring-app,
   // but here we are setting up the spring mixin,
   // so only adding the dependency-management plugin and some common spring-boot-starter dependencies.

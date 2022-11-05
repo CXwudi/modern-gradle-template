@@ -13,10 +13,13 @@ dependencyResolutionManagement {
   }
 }
 
-// current grouping strategy: group by dependencies used by a module. 
-// e.g. kotlin-jvm-plugins introduced kotlin plugin dependencies
-include("root-plugins")
-include("java-plugins")
-include("kotlin-jvm-plugins")
-include("spring-plugins:java")
-include("spring-plugins:kotlin-jvm")
+// current grouping strategy: each plugin is a separate submodule to maximize parallelism
+include("root")
+include("mixin:app")
+include("mixin:lib")
+include("mixin:junit5")
+include("mixin:lombok")
+// include("java-plugins")
+// include("kotlin-jvm-plugins")
+// include("spring-plugins:java")
+// include("spring-plugins:kotlin-jvm")
