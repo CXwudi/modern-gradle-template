@@ -13,3 +13,5 @@ services:
       - GID=1000
     working_dir: /home/gradle/project
     command: gradle clean build test
+    cpus: 0.25
+    mem_limit: 2g
