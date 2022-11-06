@@ -1,7 +1,7 @@
 plugins {
   id("my.kotlin-spring-app")
   id("my.app-mixin") // demonstrating using the app-mixin plugin to generate convenience run scripts
-  id("my.spring-boot-mockk-mixin") // u can add other mixin if you want
+//  id("my.spring-boot-mockk-mixin") // u can add other mixin if you want
 }
 
 dependencies {
