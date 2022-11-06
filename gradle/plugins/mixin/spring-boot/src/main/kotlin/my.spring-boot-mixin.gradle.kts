@@ -8,14 +8,13 @@ plugins {
   id("io.spring.dependency-management")
 }
 
-configurations {
-  all { // this is how excluding a dependency across all other dependencies, so that we can use log4j2
-    exclude("org.springframework.boot", "spring-boot-starter-logging")
-  }
-}
-
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter")
+  modules {
+    module("org.springframework.boot:spring-boot-starter-logging") { // instead of excluding, we can replace one module to another
+      replacedBy("org.springframework.boot:spring-boot-starter-log4j2", "Use Log4j2 instead of Logback")
+    }
+  }
   implementation("org.springframework.boot:spring-boot-starter-log4j2")
   // annotationProcessor("org.springframework.boot:spring-boot-configuration-processor") // should let main build decide to include or not
   // with spring boot, you are pretty much fixed to use spring-boot-starter-test, which uses junit 5,
