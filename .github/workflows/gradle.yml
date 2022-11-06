@@ -36,7 +36,7 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
-        arguments: build --rerun-tasks
+        arguments: build
         build-root-directory: gradle/plugins
   
   main-build:
@@ -56,4 +56,4 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
-        arguments: build check --rerun-tasks
+        arguments: build check
