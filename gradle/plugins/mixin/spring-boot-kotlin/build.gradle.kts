@@ -3,8 +3,7 @@ plugins {
 }
 
 dependencies {
-  implementation(project(":mixin:kotlin-jvm"))
-  implementation(project(":mixin:kotest-jvm"))
+  implementation(project(":root"))
   // this needs to apply to every build.gradle.kts file in this gradle/plugins folder
   // that requires dependency version to be resolved by platform("poc.cx.glp:version-constraints")
   // another way 1 is to includeBuild() yet another plugin build inside this plugin build's settings.gradle.kts,

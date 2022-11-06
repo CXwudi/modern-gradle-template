@@ -1,11 +1,17 @@
 plugins {
-  id("my.kotlin-jvm-mixin")
-  id("my.kotest-jvm-mixin")
+  id("my.jvm-root")
   kotlin("plugin.spring")
+}
+
+configurations {
+  all {
+    exclude(group = "org.mockito")
+  }
 }
 
 dependencies {
   implementation("com.github.CXwudi:kotlin-jvm-inline-logging")
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("io.kotest.extensions:kotest-extensions-spring")
+  testImplementation("io.mockk:mockk")
+  testImplementation("com.ninja-squad:springmockk")
 }
