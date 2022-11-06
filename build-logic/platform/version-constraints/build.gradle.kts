@@ -29,6 +29,7 @@ dependencies {
     // main build dependencies, be used in the actual app and lib build.gradle.kts
     api("com.github.CXwudi:kotlin-jvm-inline-logging:${libs.versions.kInlineLogging.get()}")
     api("io.kotest.extensions:kotest-extensions-spring:${libs.versions.kotestSpring.get()}")
+    api("org.mockito.kotlin:mockito-kotlin:${libs.versions.mockitoKotlin.get()}")
     api("io.mockk:mockk:${libs.versions.mockk.get()}")
     api("com.ninja-squad:springmockk:${libs.versions.springMockk.get()}")
   }

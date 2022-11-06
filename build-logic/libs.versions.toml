@@ -18,6 +18,7 @@ kotlin = "1.7.20"
 springBoot = "2.7.5"
 kotest = "5.5.4"
 kotestSpring = "1.1.2"
+mockitoKotlin = "4.0.0"
 mockk = "1.13.2"
 springMockk = "3.1.1"
 # plugin versions
