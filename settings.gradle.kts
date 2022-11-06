@@ -3,7 +3,7 @@ pluginManagement {
     gradlePluginPortal()
     // google()
   }
-  includeBuild("gradle/plugins") // use this to include our own convention plugins
+  includeBuild("build-logic/plugins") // use this to include our own convention plugins
 }
 
 dependencyResolutionManagement {
@@ -13,8 +13,13 @@ dependencyResolutionManagement {
     maven("https://jitpack.io")
   }
 
-  includeBuild("gradle/platform") // use this to include our own gradle platform to centralize version management
-  // the gradle/libs.versions.toml file is included by default, no need to declare it here
+  includeBuild("build-logic/platform") // use this to include our own gradle platform to centralize version management
+
+  versionCatalogs { // currently unused, just added for demo purposes
+    create("libs") {
+      from(files("build-logic/libs.versions.toml")) // if it is gradle/libs.versions.toml, then no need to add it manually here
+    }
+  }
 }
 
 rootProject.name = "gradle-learn-project"
