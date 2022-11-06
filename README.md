@@ -10,4 +10,4 @@ Definitely overkilled for small, personal, or school projects...
 
 See how I structured my precompiled script plugins
 
-![image](build-logic/plugins/gradle%20plugins%20structure.drawio.png)
+![image](gradle/plugins/gradle%20plugins%20structure.drawio.png)

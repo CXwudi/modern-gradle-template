@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-  implementation(project(":lib"))
+  implementation(project(":sample-java-lib"))
   implementation("org.apache.commons:commons-lang3")
 }
 
