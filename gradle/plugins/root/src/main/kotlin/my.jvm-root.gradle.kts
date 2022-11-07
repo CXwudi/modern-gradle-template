@@ -13,6 +13,9 @@ java {
 
 tasks.withType<JavaCompile>().configureEach {
   options.encoding = "UTF-8"
+  // should we add `-parameters`?
+  // I think we can, https://stackoverflow.com/questions/44067477/drawbacks-of-javac-parameters-flag
+  options.compilerArgs.add("-parameters")
 }
 
 /**
