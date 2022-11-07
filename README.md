@@ -22,11 +22,13 @@ This is explicitly designed to boost build performance from gradle parallel exec
 
 ## I want to use this template
 
-Thanks for considering my template,
-simply just delete the three main subproject `sample-java-lib`, `sample-kotlin-app` and `sample-kotlin-spring-app`.
+Thanks for considering my template 🙂
 
 Modify the `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts)
 and modify the group name of the `version-constraints` module
 in [`gradle/platform/version-constarins/build.gradle.kts`](gradle/platform/version-constraints/build.gradle.kts)
 as well as the reference to group name
 in [`gradle/plugins/root/src/main/kotlin/my.jvm-root.gradle.kts`](gradle/plugins/root/src/main/kotlin/my.jvm-root.gradle.kts)
+
+Now you can just delete the three main subproject `sample-java-lib`, `sample-kotlin-app` and `sample-kotlin-spring-app`,
+and add your own main project 😉
