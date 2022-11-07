@@ -2,7 +2,8 @@ plugins {
   id("my.jvm-root")
 }
 
-// let user decide to exclude mockito
+// do not write any exclusion rules here, they will be applied to all projects those use this plugin,
+// and nobody knows if the applied project still needs mockito or not.
 // configurations {
 //  all {
 //    exclude(group = "org.mockito")
