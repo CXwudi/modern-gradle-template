@@ -2,12 +2,12 @@ plugins {
   id("my.jvm-root")
 }
 
-// do not write any exclusion rules here, they will be applied to all projects those use this plugin,
+// do not write any exclusion rules here, they will be applied to all projects that use this plugin,
 // and nobody knows if the applied project still needs mockito or not.
 // configurations {
-//  all {
-//    exclude(group = "org.mockito")
-//  }
+//   all {
+//     exclude(group = "org.mockito")
+//   }
 // }
 
 dependencies {

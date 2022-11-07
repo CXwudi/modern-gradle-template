@@ -14,9 +14,12 @@ dependencyResolutionManagement {
 }
 
 // current grouping strategy: each script plugin is a separate submodule to maximize parallelism
-// the root of all jvm
+
+// the root of all plugins, configure the jvm
 include("root")
-// the mixins, the main build should depend on one convention plugin below before applying these mixins
+
+// the core mixins, used by the conventions mentioned below
+// the main build should try to avoid applying these mixins directly but prefer conventions first
 include("mixin:app")
 include("mixin:lib")
 include("mixin:junit5")
@@ -26,8 +29,12 @@ include("mixin:kotest-jvm")
 include("mixin:spring-boot")
 include("mixin:spring-boot-app")
 include("mixin:spring-boot-kotlin")
+
+// the optional mixins, main builds can optionally apply these plugins
+include("mixin:spring-boot-appfix")
 include("mixin:spring-boot-mockk")
-// the conventions, main builds should depend on these
+
+// the conventions, main builds should depend on these first
 include("convention:java-app")
 include("convention:java-lib")
 include("convention:kotlin-app")
@@ -36,7 +43,3 @@ include("convention:spring-app")
 include("convention:spring-lib")
 include("convention:kotlin-spring-app")
 include("convention:kotlin-spring-lib")
-// include("java-plugins")
-// include("kotlin-jvm-plugins")
-// include("spring-plugins:java")
-// include("spring-plugins:kotlin-jvm")

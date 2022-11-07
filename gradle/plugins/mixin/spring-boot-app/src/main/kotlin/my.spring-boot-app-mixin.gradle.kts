@@ -1,8 +1,14 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 plugins {
-  // so far this plugin just adds
   id("org.springframework.boot")
-  // optional, can be used to distribute build scripts for click and run.
-  // but need to set applications.mainClass explicitly in build.gradle.kts
-  // it's better to add this plugin at the main spring app build who really needs it.
-  // id("my.app-mixin")
+}
+
+// taken from https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#packaging-executable.and-plain-archives
+tasks.named<BootJar>("bootJar") {
+  archiveClassifier.set("boot")
+}
+
+tasks.named<Jar>("jar") {
+  archiveClassifier.set("")
 }
