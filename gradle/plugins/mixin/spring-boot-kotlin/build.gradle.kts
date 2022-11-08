@@ -12,4 +12,5 @@ dependencies {
   // another way 2 is to use version catalog, but it is more ulgry in my opinion
   implementation(platform("poc.cx.glp:version-constraints"))
   implementation("org.jetbrains.kotlin:kotlin-allopen")
+  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
 }
