@@ -1,3 +1,6 @@
+/**
+ * This plugin is optional for kotlin spring boot projects that want to use mockk.
+ */
 plugins {
   id("my.jvm-root")
 }
