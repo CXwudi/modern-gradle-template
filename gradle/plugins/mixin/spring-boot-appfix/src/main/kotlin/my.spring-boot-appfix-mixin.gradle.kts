@@ -1,7 +1,9 @@
 /**
- * This add-in plugin is optional and only applicable for main projects that applied both my.spring-boot-app-mixin and my.app-mixin.
+ * This add-in plugin is optional for spring boot app with gradle application plugin added.
  *
  * This plugin would let the bootStartScripts task output be stored at the root directory of the distribution output.
+ *
+ * requires spring-boot-mixin, spring-boot-app-mixin, and app-mixin
  */
 plugins {
   id("org.springframework.boot")

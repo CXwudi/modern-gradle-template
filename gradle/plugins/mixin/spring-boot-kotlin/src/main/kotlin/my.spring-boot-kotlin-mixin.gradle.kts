@@ -1,5 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+/**
+ * require kotlin-mixin and spring-boot-mixin
+ */
 plugins {
   id("my.jvm-root")
   kotlin("plugin.spring")

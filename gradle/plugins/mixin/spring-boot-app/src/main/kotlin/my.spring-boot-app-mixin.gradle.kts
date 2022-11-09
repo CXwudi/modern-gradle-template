@@ -1,5 +1,8 @@
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
+/**
+ * requires spring-boot-mixin
+ */
 plugins {
   // every spring project must apply this plugin, this plugin is not just simply wrap a boot jar,
   // but also configure kotlin and Java compiler compilation parameters to make json or reflection work correctly.
