@@ -16,7 +16,7 @@ dependencies {
   // use my.spring-boot-mockk-mixin to add mockk instead
 }
 
-tasks.withType<KotlinCompile> {
+tasks.withType<KotlinCompile>().configureEach {
   kotlinOptions {
     freeCompilerArgs = listOf("-Xjsr305=strict")
   }
