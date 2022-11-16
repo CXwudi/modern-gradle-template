@@ -18,6 +18,6 @@ dependencies {
 
 tasks.withType<KotlinCompile>().configureEach {
   kotlinOptions {
-    freeCompilerArgs = listOf("-Xjsr305=strict")
+    freeCompilerArgs = freeCompilerArgs + listOf("-Xinline-logging")
   }
 }
