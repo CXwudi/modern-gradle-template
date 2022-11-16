@@ -55,9 +55,10 @@ dependencies {
   // because the actual main project which uses this plugin,
   // which has the root settings.gradle.kts includeBuild("our platform"), can resolve it.
   implementation(platform("poc.cx.glp:version-constraints"))
-  // annotationProcessor unfortunately does not extend from implementation, nor should it be.
+  // some configurations unfortunately do not extend from implementation, nor should they be.
   // so we manually add the platform in, see https://docs.gradle.org/current/userguide/java_plugin.html#tab:configurations
   annotationProcessor(platform("poc.cx.glp:version-constraints"))
-  // annotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
-  // testAnnotationProcessorAndCompileOnly(platform("poc.cx.glp:version-constraints"))
+  runtimeOnly(platform("poc.cx.glp:version-constraints"))
+  compileOnly(platform("poc.cx.glp:version-constraints"))
+  // also api() and compileOnlyApi(), but they are added in my.lib-mixin
 }
