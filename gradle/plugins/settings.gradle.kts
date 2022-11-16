@@ -6,11 +6,11 @@ dependencyResolutionManagement {
   includeBuild("../platform")
 
   // currently unused, just added for demo purposes
-  versionCatalogs {
-    create("libs") {
-      from(files("../libs.versions.toml"))
-    }
-  }
+//  versionCatalogs {
+//    create("libs") {
+//      from(files("../libs.versions.toml"))
+//    }
+//  }
 }
 
 // current grouping strategy: each script plugin is a separate submodule to maximize parallelism
