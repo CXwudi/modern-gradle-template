@@ -9,6 +9,9 @@ plugins {
   id("nl.littlerobots.version-catalog-update")
 }
 
+// this plugin can only properly report updates on dependencies {} blocks
+// so to apply updates on dependencies {} blocks on convention plugins build.gradle.kts,
+// we need these two plugins being applied to the root build.gradle.kts in gradle/plugins
 tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
   gradleReleaseChannel = "current" // don't use the default "release-candidate"
   checkConstraints = true // check version constraints
@@ -19,7 +22,8 @@ tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
       candidate.version.contains(qualifier, ignoreCase = true)
     }
   }
-  outputFormatter = "$outputFormatter,html"
+  // html for better reports, json for version catalog updater
+  outputFormatter = "$outputFormatter,html,json"
 }
 
 versionCatalogUpdate {

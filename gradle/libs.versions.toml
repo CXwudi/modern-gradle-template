@@ -24,7 +24,7 @@ springMockk = "3.1.1"
 # plugin versions
 gradleVersions = "0.44.0"
 versionCatalogUpdater = "0.7.0"
-springDependencyManagement = "1.0.15.RELEASE"
+springDependencyManagement = "1.1.0"
 kInlineLogging = "1.0.1"
 freefairPlugins = "6.5.1"
 
