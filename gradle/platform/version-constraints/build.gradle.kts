@@ -9,28 +9,33 @@ javaPlatform {
   allowDependencies()
 }
 
+// add bom, gradle platforms, and dependencies to the shared libs.version.toml first
+// so that version-catalog-updater can update them,
+// then add them here using the version catalog
 dependencies {
-  // add your maven bom or gradle platform here and add the version to libs.versions.toml file
+  // add your maven bom or gradle platform here
 
   // benefit from spring boot's version management for non-spring projects
   // see https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html to check what lib is included
-  api(platform("org.springframework.boot:spring-boot-dependencies:${libs.versions.springBoot.get()}"))
+  api(platform(libs.spring.boot.dependencies))
   // api(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.6.4")) // enable if spring screws up coroutines
-  api(platform("io.kotest:kotest-bom:${libs.versions.kotest.get()}"))
+  api(platform(libs.kotest.bom))
   constraints {
-    // add your api() here to manage dependency and add the version to libs.versions.toml file
+    // add your api() here to manage dependencies not defined in bom or gradle platform
     // plugins dependencies, be used in gradle/plugins build.gradle.kts
-    api("org.jetbrains.kotlin:kotlin-gradle-plugin:${libs.versions.kotlin.get()}")
-    api("org.jetbrains.kotlin:kotlin-allopen:${libs.versions.kotlin.get()}")
-    api("org.springframework.boot:spring-boot-gradle-plugin:${libs.versions.springBoot.get()}")
-    api("io.spring.gradle:dependency-management-plugin:${libs.versions.springDependencyManagement.get()}")
-    api("io.freefair.lombok:io.freefair.lombok.gradle.plugin:${libs.versions.freefairPlugins.get()}")
+    api(libs.gradle.versions.plugin)
+    api(libs.gradle.version.catalog.update.plugin)
+    api(libs.kotlin.gradle.plugin)
+    api(libs.kotlin.allopen)
+    api(libs.spring.boot.gradle.plugin)
+    api(libs.spring.dependency.management.plugin)
+    api(libs.lombok.gradle.plugin)
 
     // main build dependencies, be used in the actual app and lib build.gradle.kts
-    api("com.github.CXwudi:kotlin-jvm-inline-logging:${libs.versions.kInlineLogging.get()}")
-    api("io.kotest.extensions:kotest-extensions-spring:${libs.versions.kotestSpring.get()}")
-    api("org.mockito.kotlin:mockito-kotlin:${libs.versions.mockitoKotlin.get()}")
-    api("io.mockk:mockk:${libs.versions.mockk.get()}")
-    api("com.ninja-squad:springmockk:${libs.versions.springMockk.get()}")
+    api(libs.kotlin.jvm.inline.logging)
+    api(libs.kotest.extensions.spring)
+    api(libs.mockito.kotlin)
+    api(libs.mockk)
+    api(libs.spring.mockk)
   }
 }
