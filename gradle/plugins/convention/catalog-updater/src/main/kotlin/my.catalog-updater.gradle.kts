@@ -1,3 +1,4 @@
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 import nl.littlerobots.vcu.plugin.versionCatalogUpdate
 
 /**
@@ -8,12 +9,17 @@ plugins {
   id("nl.littlerobots.version-catalog-update")
 }
 
-tasks.withType<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask> {
+tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
+  gradleReleaseChannel = "current" // don't use the default "release-candidate"
+  checkConstraints = true // check version constraints
+  revision = "release" // don't use the default "milestone"
+  // maven can not distinguish release and milestone, so we have to reject by keywords
   rejectVersionIf {
     listOf("alpha", "beta", "rc", "cr", "m", "eap", "pr").any { qualifier ->
       candidate.version.contains(qualifier, ignoreCase = true)
     }
   }
+  outputFormatter = "$outputFormatter,html"
 }
 
 versionCatalogUpdate {

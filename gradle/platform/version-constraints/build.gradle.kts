@@ -12,6 +12,7 @@ javaPlatform {
 // add bom, gradle platforms, and dependencies to the shared libs.version.toml first
 // so that version-catalog-updater can update them,
 // then add them here using the version catalog
+// also, this should be the only place where you use the version catalog to add dependencies
 dependencies {
   // add your maven bom or gradle platform here
 
