@@ -5,8 +5,5 @@
     ":automergeMinor",
     ":automergePr",
     ":automergeRequireAllStatusChecks"
-  ],
-  "major": {
-    "dependencyDashboardApproval": true
-  }
+  ]
 }
