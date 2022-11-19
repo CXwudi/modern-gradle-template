@@ -1,6 +1,5 @@
 plugins {
   // this convention plugin must stay at the top-level build script, not in gradle/plugins
-  id("my.catalog-updater")
   // an experimental gradle wrapper with JDK downloaded
 //  id("me.filippov.gradle.jvm.wrapper") version "0.14.0"
 }
