@@ -14,15 +14,14 @@ dependencyResolutionManagement {
 }
 
 // current grouping strategy: each script plugin is a separate submodule to maximize parallelism
-
 // first, include the root of all plugins, only configure the jvm
 include("root")
 
 val toResolvedDirectories = listOf(
-  // the core mixins and the optional mixins used by the conventions mentioned below
+  // then, configure the core mixins and the optional mixins used by the conventions mentioned below
   // the main build should prefer conventions first, then use some optional mixins
   "mixin",
-  // the conventions, main builds should depend on these first
+  // last, the conventions, main builds should depend on these first
   "convention"
 )
 
