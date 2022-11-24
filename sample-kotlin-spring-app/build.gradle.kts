@@ -17,3 +17,7 @@ application {
   // must set the main class when using application plugin
   mainClass.set("poc.cx.glp.springapp.MainAppKt")
 }
+
+// springBootMockk { // "my.spring-boot-mockk-mixin" can exclude mockito if u want
+//  excludeMockito.set(true)
+// }
