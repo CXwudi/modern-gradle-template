@@ -17,7 +17,6 @@
 kotlin = "1.7.21"
 springBoot = "2.7.5"
 kotest = "5.5.4"
-mockk = "1.13.2"
 # plugin versions
 # empty for now
 

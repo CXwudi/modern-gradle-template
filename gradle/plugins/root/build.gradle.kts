@@ -11,7 +11,7 @@ dependencies {
   // by defining api(platform()) on this root precompiled plugins,
   // all other plugins will have access to the platform.
   // as long as it uses implementation() or other configurations that is extended from api()
-  api(platform("poc.cx.glp:dev-version-constraints"))
+  api(platform("poc.cx.glp:plugin-version-constraints"))
 
   // another way 1 is to includeBuild() yet another plugin build inside this plugin build's settings.gradle.kts,
   // and group `kotlin-dsl` and 'platform("poc.cx.glp:dev-version-constraints")' into another plugin
