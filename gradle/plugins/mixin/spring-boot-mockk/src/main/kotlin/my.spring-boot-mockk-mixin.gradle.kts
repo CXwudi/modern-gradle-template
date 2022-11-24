@@ -27,14 +27,15 @@ abstract class MySpringBootMockkExtension {
 extensions.create<MySpringBootMockkExtension>("springBootMockk")
 
 // use afterEvaluate to make sure this piece of logic is executed 
-// after all plugins and other configurers from the main build is applied
+// after all plugins and other configurers from the main build is applied.
+// however, afterEvaluate should not be preferred as multiple plugins with afterEvaluate can cause unexpected behavior.
+// see https://discuss.gradle.org/t/is-project-afterevaluate-the-proper-way-for-gradle-plugin-to-dynamically-create-default-tasks/31349/2
 afterEvaluate {
-  this.extensions.getByType(MySpringBootMockkExtension::class.java).let { ext ->
-    if (ext.excludeMockito.get()) {
-      this.configurations {
-        all {
-          exclude(group = "org.mockito")
-        }
+  val ext = this.extensions.getByType(MySpringBootMockkExtension::class.java)
+  if (ext.excludeMockito.get()) {
+    this.configurations {
+      all {
+        exclude(group = "org.mockito")
       }
     }
   }
