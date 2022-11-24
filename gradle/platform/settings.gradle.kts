@@ -5,4 +5,4 @@ dependencyResolutionManagement {
     }
   }
 }
-include("version-constraints")
+include("dev-version-constraints")

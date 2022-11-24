@@ -5,11 +5,11 @@ plugins {
 dependencies {
   implementation(project(":root"))
   // this needs to apply to every build.gradle.kts file in this gradle/plugins folder
-  // that requires dependency version to be resolved by platform("poc.cx.glp:version-constraints")
+  // that requires dependency version to be resolved by platform("poc.cx.glp:dev-version-constraints")
   // another way 1 is to includeBuild() yet another plugin build inside this plugin build's settings.gradle.kts,
-  // and group `kotlin-dsl` and 'platform("poc.cx.glp:version-constraints")' into the another plugin
+  // and group `kotlin-dsl` and 'platform("poc.cx.glp:dev-version-constraints")' into the another plugin
   // and replace `kotlin-dsl` with that new plugin.
   // another way 2 is to use version catalog, but it is more ulgry in my opinion
-  implementation(platform("poc.cx.glp:version-constraints"))
+  implementation(platform("poc.cx.glp:dev-version-constraints"))
   implementation("io.freefair.lombok:io.freefair.lombok.gradle.plugin")
 }

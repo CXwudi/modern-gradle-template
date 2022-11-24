@@ -7,7 +7,7 @@ dependencies {
   // optional but recommended, force the "lombok" configuration from the community lombok plugin
   // to use our own version of lombok, even if the plugin uses a newer version.
   // compileOnly and annotationProcessor already extended from the "lombok" configuration
-  lombok(platform("poc.cx.glp:version-constraints"))
+  lombok(platform("poc.cx.glp:dev-version-constraints"))
   lombok("org.projectlombok:lombok")
   // without plugin, it would be
   // annotationProcessorAndCompileOnly("org.projectlombok:lombok")

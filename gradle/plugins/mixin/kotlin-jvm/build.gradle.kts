@@ -4,6 +4,6 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation(platform("poc.cx.glp:version-constraints"))
+  implementation(platform("poc.cx.glp:dev-version-constraints"))
   implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
 }
