@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":automergeMinor",
+    ":prHourlyLimitNone",
     "schedule:weekly"
   ]
 }
