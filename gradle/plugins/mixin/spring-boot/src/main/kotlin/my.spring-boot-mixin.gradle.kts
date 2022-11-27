@@ -16,7 +16,9 @@ dependencies {
     }
   }
   implementation("org.springframework.boot:spring-boot-starter-log4j2")
-  // annotationProcessor("org.springframework.boot:spring-boot-configuration-processor") // should let main build decide to include or not
+  // both spring lib and app potentially need this.
+  // for spring app, adding this gives intellij auto-complete for application.yml
+  annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
   // with spring boot, you are pretty much fixed to use spring-boot-starter-test, which uses junit 5,
   // so don't bother extracting spring-boot-starter-test to a separate mixin...
   testImplementation("org.springframework.boot:spring-boot-starter-test")
