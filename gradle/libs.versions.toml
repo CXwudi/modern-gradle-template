@@ -36,4 +36,4 @@ dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0
 dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.2"
 dep-mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:4.0.0"
 dep-mockk = "io.mockk:mockk:1.13.2"
-dep-spring-mockk = "com.ninja-squad:springmockk:3.1.1"
+dep-spring-mockk = "com.ninja-squad:springmockk:3.1.2"
