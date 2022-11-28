@@ -6,5 +6,6 @@
     ":prHourlyLimitNone",
     "schedule:weekly"
   ],
-  "commitMessageAction": "⬆ upgrade"
+  "commitMessageAction": "⬆ upgrade",
+  "timezone": "America/Toronto"
 }
