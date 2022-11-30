@@ -10,7 +10,7 @@ dependencies {
   lombok(platform("poc.cx.glp:dev-version-constraints"))
   lombok("org.projectlombok:lombok")
   // without plugin, it would be
-  // annotationProcessorAndCompileOnly("org.projectlombok:lombok")
+  // annotationProcessor("org.projectlombok:lombok")
 }
 
 // couldn't make it work

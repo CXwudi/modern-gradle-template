@@ -5,6 +5,10 @@
  *
  * requires spring-boot-mixin, spring-boot-app-mixin, and app-mixin
  */
+// adding this can force the spring boot start script to be generated in root directory of the distribution
+// instead of bin/ directory
+// but this is kind of useless because if you need the start script,
+// why not just use gradle's application plugin?
 plugins {
   id("org.springframework.boot")
   application
