@@ -16,7 +16,6 @@
 # lib versions
 kotlin = "1.7.21"
 springBoot = "3.0.0"
-kotest = "5.5.4"
 # plugin versions
 # empty for now
 
