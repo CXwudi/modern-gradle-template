@@ -24,11 +24,12 @@ This is explicitly designed to boost build performance from gradle parallel exec
 
 Thanks for considering my template 🙂
 
-Modify the `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts)
-and modify the group name of the `version-constraints` module
-in [`gradle/platform/version-constarins/build.gradle.kts`](gradle/platform/version-constraints/build.gradle.kts)
-as well as the reference to group name
-in [`gradle/plugins/root/src/main/kotlin/my.jvm-root.gradle.kts`](gradle/plugins/root/src/main/kotlin/my.jvm-root.gradle.kts)
+Modify the project name in `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts) to your own project name,
+and globally change the group name `poc.cx.glp` to your own group name.
+The group name `poc.cx.glp` is defined
+in [`dev-version-constraints`](gradle/platform/dev-version-constraints/build.gradle.kts)
+and [`plugin-version-constraints`](gradle/platform/plugin-version-constraints/build.gradle.kts) module
+and is referred several places in  [`gradle/plugins/`](gradle/plugins) directories.
 
 Now you can just delete the three main subproject `sample-java-lib`, `sample-kotlin-app` and `sample-kotlin-spring-app`,
 and add your own main project 😉
