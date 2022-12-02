@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 /**
  * require kotlin-mixin and spring-boot-mixin
  */
@@ -14,10 +12,4 @@ dependencies {
   testImplementation("org.mockito.kotlin:mockito-kotlin")
   // due to https://github.com/Ninja-Squad/springmockk#limitations, mockk and springmockk are not added by default here,
   // use my.spring-boot-mockk-mixin to add mockk instead
-}
-
-tasks.withType<KotlinCompile>().configureEach {
-  kotlinOptions {
-    freeCompilerArgs = freeCompilerArgs + listOf("-Xinline-logging")
-  }
 }
