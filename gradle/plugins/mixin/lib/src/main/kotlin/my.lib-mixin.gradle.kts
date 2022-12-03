@@ -7,8 +7,8 @@ java {
   withSourcesJar()
 }
 
-dependencies {
-  // similar story in my.jvm-root mixin
-  api(platform("poc.cx.glp:dev-version-constraints"))
-  compileOnlyApi(platform("poc.cx.glp:dev-version-constraints"))
+configurations {
+  listOf("api", "compileOnlyApi").forEach {
+    getByName(it).extendsFrom(versionConstraints.get())
+  }
 }
