@@ -1,5 +1,5 @@
 /**
- * The root plugin only defines the java version, dependency version constraints and a new configuration called [annotationProcessorAndCompileOnly].
+ * The root plugin only defines the java version, dependency version constraints and a new configuration called [versionConstraints].
  */
 plugins {
   java
@@ -24,7 +24,7 @@ tasks.withType<JavaCompile>().configureEach {
 /**
  * A new configuration [versionConstraints] just for dependency version constraints.
  */
-val versionConstraints = configurations.create("versionConstraints") {
+val versionConstraints: Configuration = configurations.create("versionConstraints") {
   // see hte table 1 in https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs
   isCanBeConsumed = false
   isCanBeResolved = false
