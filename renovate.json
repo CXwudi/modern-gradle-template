@@ -6,6 +6,18 @@
     ":prHourlyLimitNone",
     "schedule:weekly"
   ],
+  "packageRules": [
+    {
+      "groupName": "Group all patch dependencies",
+      "groupSlug": "all-patch",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ]
+    }
+  ],
   "commitMessageAction": "⬆ upgrade",
   "timezone": "America/Toronto"
 }
