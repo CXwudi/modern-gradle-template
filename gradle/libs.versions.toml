@@ -39,4 +39,4 @@ dep-spring-mockk = "com.ninja-squad:springmockk:3.1.2"
 
 [plugins]
 # plugins that are used in main build but not in precompiled script plugins
-graalvm-native-image = "org.graalvm.buildtools.native:0.9.18"
+graalvm-native-image = "org.graalvm.buildtools.native:0.9.19"
