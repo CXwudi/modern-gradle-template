@@ -4,8 +4,7 @@
     "config:base",
     ":automergeMinor",
     ":prHourlyLimitNone",
-    ":automergePr",
-    "schedule:weekly"
+    ":automergePr"
   ],
   "lockFileMaintenance": {
     "platformAutomerge": true
