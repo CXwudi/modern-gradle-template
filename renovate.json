@@ -4,8 +4,12 @@
     "config:base",
     ":automergeMinor",
     ":prHourlyLimitNone",
+    ":automergePr",
     "schedule:weekly"
   ],
+  "lockFileMaintenance": {
+    "platformAutomerge": true
+  }
   "packageRules": [
     {
       "groupName": "Group all patch dependencies",
