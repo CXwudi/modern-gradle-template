@@ -8,7 +8,7 @@
   ],
   "lockFileMaintenance": {
     "platformAutomerge": true
-  }
+  },
   "packageRules": [
     {
       "groupName": "Group all patch dependencies",
