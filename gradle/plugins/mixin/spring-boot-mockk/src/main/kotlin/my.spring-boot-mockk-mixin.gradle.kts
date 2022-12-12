@@ -20,11 +20,11 @@ abstract class MySpringBootMockkExtension {
   abstract val excludeMockito: Property<Boolean>
 
   init {
-    excludeMockito.convention(false)
+    excludeMockito.convention(true)
   }
 }
 
-extensions.create<MySpringBootMockkExtension>("springBootMockk")
+extensions.create<MySpringBootMockkExtension>("mySpringBootMockk")
 
 // use afterEvaluate to make sure this piece of logic is executed 
 // after all plugins and other configurers from the main build is applied.
@@ -36,6 +36,7 @@ afterEvaluate {
     this.configurations {
       all {
         exclude(group = "org.mockito")
+        exclude(group = "org.mockito.kotlin")
       }
     }
   }
