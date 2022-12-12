@@ -32,7 +32,7 @@ plugin-spring-dependency-management = "io.spring.gradle:dependency-management-pl
 plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:6.6"
 # dependencies, naming convention: dep-<name>
 dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
-dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.1"
+dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.2"
 dep-mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:4.1.0"
 dep-mockk = "io.mockk:mockk:1.13.3"
 dep-spring-mockk = "com.ninja-squad:springmockk:4.0.0"
