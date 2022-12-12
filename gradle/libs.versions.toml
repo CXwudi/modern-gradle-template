@@ -16,7 +16,7 @@
 # lib versions
 kotlin = "1.7.22"
 springBoot = "3.0.0"
-# plugin versions
+# plugin dep versions
 # empty for now
 
 [libraries]
