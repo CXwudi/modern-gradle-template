@@ -7,6 +7,7 @@
     ":automergePr"
   ],
   "lockFileMaintenance": {
+    "enabled": true,
     "platformAutomerge": true
   },
   "packageRules": [
