@@ -19,6 +19,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "gradle-learn-project"
 
-include("sample-java-lib")
-include("sample-kotlin-app")
-include("sample-kotlin-spring-app")
+rootDir.listFiles { file -> file.isDirectory && !file.isHidden && file.name.startsWith("sample-") }?.forEach {
+  include(it.name)
+}
