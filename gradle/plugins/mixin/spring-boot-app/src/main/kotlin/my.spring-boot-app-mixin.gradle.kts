@@ -1,3 +1,4 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 /**
@@ -12,10 +13,10 @@ plugins {
 }
 
 // taken from https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#packaging-executable.and-plain-archives
-tasks.named<BootJar>("bootJar") {
+tasks.named<BootJar>(SpringBootPlugin.BOOT_JAR_TASK_NAME) {
   archiveClassifier.set("boot")
 }
 
-tasks.named<Jar>("jar") {
+tasks.named<Jar>(JavaPlugin.JAR_TASK_NAME) {
   archiveClassifier.set("")
 }
