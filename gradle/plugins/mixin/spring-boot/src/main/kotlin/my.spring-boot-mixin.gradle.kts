@@ -25,6 +25,18 @@ tasks.withType<Test>().configureEach {
   useJUnitPlatform()
 }
 
+/*
+ * In the future, we need to manually configure JVM and Kotlin to match what spring boot gradle plugin configured,
+ * see https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#reacting-to-other-plugins.java and
+ * https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#reacting-to-other-plugins.kotlin
+ * Currently, spring boot only configured UTF-8 and '-parameters' compiler argument.
+ * Both are configured in jvm-root and kotlin-jvm-mixin, so we don't need to do anything here.
+ *
+ * We could have let both spring-app and spring-lib mixin uses spring-boot-gradle-plugin,
+ * but that would cause all spring lib modules containing a lot of tasks that are only needed for spring app,
+ * such as bootJar, bootRun, etc.
+ */
+
 extensions.create<MySpringBootExtension>("mySpringBoot")
 
 afterEvaluate {
