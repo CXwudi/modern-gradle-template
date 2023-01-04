@@ -17,6 +17,18 @@ dependencyResolutionManagement {
   // gradle/libs.versions.toml is automatically imported if exists
 }
 
+plugins {
+  // unfortunately, we don't know how to use version catalog in root settings that are.gradle
+  id("com.gradle.enterprise") version ("3.12.1")
+}
+
+gradleEnterprise {
+  buildScan {
+    termsOfServiceUrl = "https://gradle.com/terms-of-service"
+    termsOfServiceAgree = "yes"
+  }
+}
+
 rootProject.name = "gradle-learn-project"
 
 rootDir.listFiles { file -> file.isDirectory && !file.isHidden && file.name.startsWith("sample-") }?.forEach {
