@@ -14,7 +14,7 @@
 [versions]
 # java version is defined in my.jvm-base.gradle.kts
 # lib versions
-kotlin = "1.8.0"
+kotlin = "1.8.10"
 springBoot = "3.0.2"
 # plugin dep versions
 # empty for now
@@ -23,7 +23,7 @@ springBoot = "3.0.2"
 # unless there is a keyword conflict or the name is wired
 # bom, naming convention: bom-<name>
 bom-spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
-bom-kotest = "io.kotest:kotest-bom:5.5.4"
+bom-kotest = "io.kotest:kotest-bom:5.5.5"
 # plugin dependencies, naming convention: plugin-<name>
 plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 plugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
