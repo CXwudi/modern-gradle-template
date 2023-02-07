@@ -19,7 +19,7 @@ dependencyResolutionManagement {
 
 plugins {
   // unfortunately, we don't know how to use version catalog in root settings that are.gradle
-  id("com.gradle.enterprise") version ("3.12.1")
+  id("com.gradle.enterprise") version ("3.12.3")
 }
 
 gradleEnterprise {
