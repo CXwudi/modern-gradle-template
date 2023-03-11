@@ -19,7 +19,7 @@ dependencyResolutionManagement {
 
 plugins {
   // unfortunately, we don't know how to use version catalog in root settings that are.gradle
-  id("com.gradle.enterprise") version "3.12.3"
+  id("com.gradle.enterprise") version "3.12.4"
   id("org.gradle.toolchains.foojay-resolver-convention") version "0.4.0"
 }
 

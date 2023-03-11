@@ -15,7 +15,7 @@
 # java version is defined in my.jvm-base.gradle.kts
 # lib versions
 kotlin = "1.8.10"
-springBoot = "3.0.2"
+springBoot = "3.0.4"
 # plugin dep versions
 # empty for now
 
@@ -29,13 +29,13 @@ plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.
 plugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
 plugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 plugin-spring-dependency-management = "io.spring.gradle:dependency-management-plugin:1.1.0"
-plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:6.6.2"
+plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:6.6.3"
 # dependencies, naming convention: dep-<name>
 dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.2"
 dep-mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:4.1.0"
 dep-mockk = "io.mockk:mockk:1.13.4"
-dep-spring-mockk = "com.ninja-squad:springmockk:4.0.0"
+dep-spring-mockk = "com.ninja-squad:springmockk:4.0.2"
 
 [plugins]
 # plugins that are used in main build but not in precompiled script plugins
