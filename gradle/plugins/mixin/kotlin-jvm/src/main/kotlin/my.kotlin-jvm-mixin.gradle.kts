@@ -1,4 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmCompilerOptions
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 
 plugins {
   id("my.jvm-root")
@@ -11,11 +12,10 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm")
 }
 
-tasks.withType<KotlinCompile>().configureEach {
-  kotlinOptions {
-    javaParameters = true // see the same reason in jvm-root mixin
-    // jvmTarget is auto-resolved when using java-toolchain,
-    // but intellij is not happy, so adding it explicitly
-    jvmTarget = java.toolchain.languageVersion.get().asInt().toString()
+tasks.withType<KotlinCompilationTask<KotlinJvmCompilerOptions>>().configureEach {
+  compilerOptions {
+    javaParameters.set(true) // see the same reason in jvm-root mixin
+    // kotlin will use a java tool chain version,
+    // see https://kotlinlang.org/docs/gradle-configure-project.html#gradle-java-toolchains-support
   }
 }
