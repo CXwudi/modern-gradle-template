@@ -12,6 +12,8 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm")
 }
 
+// new way to configure kotlin compiler options,
+// see https://kotlinlang.org/docs/gradle-compiler-options.html#how-to-define-options
 tasks.withType<KotlinCompilationTask<KotlinJvmCompilerOptions>>().configureEach {
   compilerOptions {
     javaParameters.set(true) // see the same reason in jvm-root mixin
