@@ -22,7 +22,7 @@ springBoot = "3.0.4"
 [libraries]
 # unless there is a keyword conflict or the name is wired
 # bom, naming convention: bom-<name>
-bom-spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
+bom-spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
 bom-kotest = "io.kotest:kotest-bom:5.5.5"
 # plugin dependencies, naming convention: plugin-<name>
 plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

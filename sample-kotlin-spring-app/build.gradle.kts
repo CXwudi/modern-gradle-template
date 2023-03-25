@@ -18,6 +18,6 @@ application {
   mainClass.set("poc.cx.glp.springapp.MainAppKt")
 }
 
-mySpringBoot {
+mySpringBootApp {
   loggingFramework.set(MySpringBootLoggingFramework.LOGBACK)
 }

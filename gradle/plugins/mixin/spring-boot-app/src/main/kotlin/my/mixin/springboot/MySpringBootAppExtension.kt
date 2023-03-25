@@ -2,7 +2,7 @@ package my.mixin.springboot
 
 import org.gradle.api.provider.Property
 
-abstract class MySpringBootExtension {
+abstract class MySpringBootAppExtension {
   abstract val loggingFramework: Property<MySpringBootLoggingFramework>
 
   init {

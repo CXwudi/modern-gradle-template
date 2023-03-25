@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+  testImplementation(platform("io.kotest:kotest-bom"))
   testImplementation("io.kotest:kotest-runner-junit5")
 }
 

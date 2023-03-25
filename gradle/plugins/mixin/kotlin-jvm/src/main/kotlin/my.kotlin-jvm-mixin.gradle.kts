@@ -14,10 +14,12 @@ dependencies {
 
 // new way to configure kotlin compiler options,
 // see https://kotlinlang.org/docs/gradle-compiler-options.html#how-to-define-options
-tasks.withType<KotlinCompilationTask<KotlinJvmCompilerOptions>>().configureEach {
-  compilerOptions {
-    javaParameters.set(true) // see the same reason in jvm-root mixin
-    // kotlin will use a java tool chain version,
-    // see https://kotlinlang.org/docs/gradle-configure-project.html#gradle-java-toolchains-support
+listOf("compileKotlin", "compileTestKotlin").forEach {
+  tasks.named<KotlinCompilationTask<KotlinJvmCompilerOptions>>(it) {
+    compilerOptions {
+      javaParameters.set(true) // see the same reason in jvm-root mixin
+      // kotlin will use a java tool chain version,
+      // see https://kotlinlang.org/docs/gradle-configure-project.html#gradle-java-toolchains-support
+    }
   }
 }

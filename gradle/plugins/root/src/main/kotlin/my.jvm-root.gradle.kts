@@ -25,7 +25,7 @@ tasks.withType<JavaCompile>().configureEach {
  * A new configuration [versionConstraints] just for dependency version constraints.
  */
 val versionConstraints: Configuration = configurations.create("versionConstraints") {
-  // see hte table 1 in https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs
+  // see the table 1 in https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs
   isCanBeConsumed = false
   isCanBeResolved = false
   description = "A configuration to declare platform (version constraints) in every other configurations"

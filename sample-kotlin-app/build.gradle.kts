@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+  versionConstraints(platform("org.springframework.boot:spring-boot-dependencies"))
   implementation(project(":sample-java-lib"))
   implementation("org.apache.commons:commons-lang3")
 }

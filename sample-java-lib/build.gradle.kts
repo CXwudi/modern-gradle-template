@@ -5,5 +5,6 @@ plugins {
 }
 
 dependencies {
+  versionConstraints(platform("org.springframework.boot:spring-boot-dependencies"))
   implementation("org.apache.commons:commons-lang3")
 }
