@@ -29,7 +29,7 @@ plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.
 plugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
 plugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 plugin-spring-dependency-management = "io.spring.gradle:dependency-management-plugin:1.1.0"
-plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:6.6.3"
+plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.0.1"
 # dependencies, naming convention: dep-<name>
 dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.2"
