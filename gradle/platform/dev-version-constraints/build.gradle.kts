@@ -16,7 +16,7 @@ dependencies {
   // but since this platform is imported to every other project by being imported at root jvm plugin,
   // we don't want version conflict to happen from multiple api(platform()).
 
-  // add your api() here to manage dependencies not defined in bom or gradle platform
+  // add your api() here to manage dependencies not defined in a bom or gradle platform
   constraints {
     // maven bom or gradle platform
     api(libs.bom.kotest)
