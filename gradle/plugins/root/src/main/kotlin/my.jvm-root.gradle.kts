@@ -28,7 +28,7 @@ val versionConstraints: Configuration = configurations.create("versionConstraint
   // see the table 1 in https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs
   isCanBeConsumed = false
   isCanBeResolved = false
-  description = "A configuration to declare platform (version constraints) in every other configurations"
+  description = "A configuration to declare platform (version constraints) in every other resolvable configurations"
 }
 
 configurations {
