@@ -1,7 +1,7 @@
 plugins {
   id("my.jvm-root")
   // note: the spring-boot-gradle-plugin is not applied as it is for setting up the spring-app,
-  // but here we are setting up the spring mixin,
+  // but here we are setting up the spring mixin.
   // the io.spring.dependency-management plugin force to use the bom version
   // it defines from spring-boot-gradle-plugin.
   // so we are just using the platform("org.springframework.boot:spring-boot-dependencies") directly.
