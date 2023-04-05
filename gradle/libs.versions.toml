@@ -24,12 +24,14 @@ springBoot = "3.0.5"
 # bom, naming convention: bom-<name>
 bom-spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
 bom-kotest = "io.kotest:kotest-bom:5.5.5"
-# plugin dependencies, naming convention: plugin-<name>
-plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-plugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
-plugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
-# plugin-spring-dependency-management = "io.spring.gradle:dependency-management-plugin:1.1.0"
-plugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.0.1"
+# plugin dependencies (for both projects and settings), naming convention: s/p + plugin-<name>
+pplugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+pplugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
+pplugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
+# pplugin-spring-dependency-management = "io.spring.gradle:dependency-management-plugin:1.1.0"
+pplugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.0.1"
+splugin-gradle-enterprise = "com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.12.6"
+splugin-foojay-resolver = "org.gradle.toolchains:foojay-resolver:0.4.0"
 # dependencies, naming convention: dep-<name>
 dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.2"

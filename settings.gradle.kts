@@ -4,6 +4,7 @@ pluginManagement {
     // google()
   }
   includeBuild("gradle/plugins") // use this to include our own convention plugins
+  includeBuild("gradle/settings") // use this to include our own convention plugins for settings.gradle.kts
 }
 
 dependencyResolutionManagement {
@@ -18,9 +19,8 @@ dependencyResolutionManagement {
 }
 
 plugins {
-  // unfortunately, we don't know how to use version catalog in root settings that are.gradle
-  id("com.gradle.enterprise") version "3.12.6"
-  id("org.gradle.toolchains.foojay-resolver-convention") version "0.4.0"
+  // my setting plugin that simply has some other setting plugins where versions are managed in version catalogs
+  id("my.root-settings-plugins")
 }
 
 gradleEnterprise {

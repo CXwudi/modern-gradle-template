@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 
 include("dev-version-constraints")
 include("plugin-version-constraints")
+include("settings-version-constraints")
