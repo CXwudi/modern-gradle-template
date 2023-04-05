@@ -28,14 +28,11 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        
-    - name: Give permission to gradlew
-      working-directory: gradle/plugins
-      run: chmod +x gradlew
       
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
+        gradle-version: current
         arguments: build
         build-root-directory: gradle/plugins
   
