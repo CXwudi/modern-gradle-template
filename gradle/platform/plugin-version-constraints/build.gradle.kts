@@ -20,7 +20,7 @@ dependencies {
     api(libs.plugin.kotlin)
     api(libs.plugin.kotlin.allopen)
     api(libs.plugin.spring.boot)
-    api(libs.plugin.spring.dependency.management)
+//    api(libs.plugin.spring.dependency.management)
     api(libs.plugin.freefair.lombok)
   }
 }

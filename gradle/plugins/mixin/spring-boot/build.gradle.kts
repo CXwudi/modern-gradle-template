@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation("io.spring.gradle:dependency-management-plugin")
+//  implementation("io.spring.gradle:dependency-management-plugin")
 }
