@@ -2,6 +2,7 @@ import my.mixin.springboot.MySpringBootAppExtension
 import my.mixin.springboot.MySpringBootLoggingFramework
 import org.springframework.boot.gradle.plugin.SpringBootPlugin
 import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 /**
  * requires spring-boot-mixin
  */
@@ -26,8 +27,22 @@ extensions.create<MySpringBootAppExtension>("mySpringBootApp")
 
 afterEvaluate {
   val ext = this.extensions.getByType(MySpringBootAppExtension::class.java)
-  if (ext.loggingFramework.get() == MySpringBootLoggingFramework.LOG4J2) {
-    // we must use the configuration excluding method because the spring lib is still using logback,
+  // determine the effective logging framework choice
+  val effectiveChoice = if (
+    ext.loggingFramework.get() == MySpringBootLoggingFramework.LOG4J2 &&
+    this.plugins.hasPlugin("org.graalvm.buildtools.native")
+  ) {
+    // check if the user forces choosing log4j2 despite the fact that graalvm native plugin is applied
+    if (ext.forceUseChosenLoggingFramework.get()) {
+      MySpringBootLoggingFramework.LOG4J2
+    } else {
+      MySpringBootLoggingFramework.LOGBACK
+    }
+  } else {
+    ext.loggingFramework.get()
+  }
+  if (effectiveChoice == MySpringBootLoggingFramework.LOG4J2) {
+    // we must use the configuration excluding method because the spring lib could still be using logback,
     // and it makes sense that the user would only want to change the logging framework on the app side
     // so that all spring lib modules can use whatever the spring app wants to use.
     this.configurations {

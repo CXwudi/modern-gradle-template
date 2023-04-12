@@ -19,7 +19,7 @@ application {
 }
 
 mySpringBootApp {
-  loggingFramework.set(MySpringBootLoggingFramework.LOGBACK)
+  loggingFramework.set(MySpringBootLoggingFramework.LOG4J2)
 }
 
 // mySpringBootKotlinMock {
