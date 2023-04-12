@@ -6,6 +6,6 @@ dependencyResolutionManagement {
   }
 }
 
-include("dev-version-constraints")
-include("plugin-version-constraints")
-include("settings-version-constraints")
+rootDir.listFiles { file -> file.isDirectory && file.name.endsWith("-version-constraints") }?.forEach {
+  include(it.name)
+}
