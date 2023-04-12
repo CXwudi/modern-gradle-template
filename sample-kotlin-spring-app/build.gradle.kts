@@ -19,6 +19,7 @@ application {
 }
 
 mySpringBootApp {
+  // to demo, it will switch to logback when the graalvm native plugin is applied
   loggingFramework.set(MySpringBootLoggingFramework.LOG4J2)
 }
 
