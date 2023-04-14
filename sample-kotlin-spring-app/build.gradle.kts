@@ -1,4 +1,4 @@
-import my.mixin.springboot.MySpringBootLoggingFramework
+import my.mixin.springboot.app.MySpringBootLoggingFramework
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
