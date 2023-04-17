@@ -8,15 +8,18 @@ plugins {
 //  id("io.spring.dependency-management")
 }
 
+fun DependencyHandlerScope.sbs(dep: String? = null, version: String? = null) =
+  "org.springframework.boot:spring-boot-starter${dep?.let { "-$it" } ?: ""}${version?.let { ":$it" } ?: ""}"
+
 dependencies {
   versionConstraints(platform("org.springframework.boot:spring-boot-dependencies"))
-  implementation("org.springframework.boot:spring-boot-starter")
+  implementation(sbs())
   // both spring lib and app potentially need this.
   // for spring app, adding this gives intellij auto-complete for application.yml
   annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
   // with spring boot, you are pretty much fixed to use spring-boot-starter-test, which uses junit 5,
   // so don't bother extracting spring-boot-starter-test to a separate mixin...
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation(sbs("test"))
 }
 
 tasks.withType<Test>().configureEach {
