@@ -37,9 +37,6 @@ gradleEnterprise {
 
 rootProject.name = "gradle-learn-project"
 
-rootDir.toPath()
-  .listDirectoryEntries("sample-*")
+rootDir.toPath().listDirectoryEntries("sample-*")
   .filter { it.isDirectory() && !it.isHidden() }
-  .forEach {
-    include(it.name)
-  }
+  .forEach { include(it.name) }
