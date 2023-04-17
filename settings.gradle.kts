@@ -1,3 +1,8 @@
+import kotlin.io.path.isDirectory
+import kotlin.io.path.isHidden
+import kotlin.io.path.listDirectoryEntries
+import kotlin.io.path.name
+
 pluginManagement {
   repositories {
     gradlePluginPortal()
@@ -32,6 +37,9 @@ gradleEnterprise {
 
 rootProject.name = "gradle-learn-project"
 
-rootDir.listFiles { file -> file.isDirectory && !file.isHidden && file.name.startsWith("sample-") }?.forEach {
-  include(it.name)
-}
+rootDir.toPath()
+  .listDirectoryEntries("sample-*")
+  .filter { it.isDirectory() && !it.isHidden() }
+  .forEach {
+    include(it.name)
+  }
