@@ -2,15 +2,14 @@ dependencyResolutionManagement {
   repositories {
     gradlePluginPortal()
   }
-
+  // currently unused, just added for demo purposes
   includeBuild("../platform")
 
-  // currently unused, just added for demo purposes
-//  versionCatalogs {
-//    create("libs") {
-//      from(files("../libs.versions.toml"))
-//    }
-//  }
+  versionCatalogs {
+    create("libs") {
+      from(files("../libs.versions.toml"))
+    }
+  }
 }
 
 // current grouping strategy: each script plugin is a separate submodule to maximize parallelism
@@ -22,7 +21,7 @@ val toResolvedDirectories = listOf(
   // the main build should prefer conventions first, then use some optional mixins
   "mixin",
   // last, the conventions, main builds should depend on these first
-  "convention"
+  "convention",
 )
 
 toResolvedDirectories.forEach { dir ->
