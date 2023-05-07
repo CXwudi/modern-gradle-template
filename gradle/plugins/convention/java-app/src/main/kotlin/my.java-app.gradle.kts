@@ -1,5 +1,5 @@
 plugins {
   id("my.lombok-mixin")
   id("my.junit5-mixin")
-  id("my.app-mixin")
+  id("my.mixin.app")
 }

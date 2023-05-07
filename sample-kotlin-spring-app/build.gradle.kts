@@ -3,7 +3,7 @@ import my.mixin.springboot.app.MySpringBootLoggingFramework
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
   id("my.kotlin-spring-app")
-  id("my.app-mixin") // demonstrating using the app-mixin plugin to generate convenience run scripts
+  id("my.mixin.app") // demonstrating using the app-mixin plugin to generate convenience run scripts
 //  id("my.spring-boot-mockk-mixin") // u can add other mixins if you want
   alias(libs.plugins.graalvm.native.image) // demonstrating using plugin directly from version catalog
 }
