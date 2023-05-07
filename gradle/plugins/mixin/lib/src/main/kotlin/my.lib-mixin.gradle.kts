@@ -1,5 +1,5 @@
 plugins {
-  id("my.jvm-root")
+  id("my.root.jvm")
   `java-library`
 }
 
@@ -8,7 +8,7 @@ java {
 }
 
 /**
- * Similar to [versionConstraints] in my.jvm-root.gradle.kts but for api() and compileOnlyApi()
+ * Similar to [versionConstraints] in jvm.gradle.kts but for api() and compileOnlyApi()
  *
  * Warning:
  * By using this configuration to declare a platform,

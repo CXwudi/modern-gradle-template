@@ -1,5 +1,5 @@
 plugins {
-  id("my.jvm-root")
+  id("my.root.jvm")
   kotlin("jvm")
 }
 

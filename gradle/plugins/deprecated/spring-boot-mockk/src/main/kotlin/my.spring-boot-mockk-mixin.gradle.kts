@@ -4,7 +4,7 @@
  * requires kotlin-mixin, spring-boot-mixin, and spring-boot-kotlin-mixin
  */
 plugins {
-  id("my.jvm-root")
+  id("my.root.jvm")
 }
 
 dependencies {

@@ -5,7 +5,7 @@ import my.mixin.springboot.MySpringBootKotlinExtension
  * require kotlin-mixin and spring-boot-mixin
  */
 plugins {
-  id("my.jvm-root")
+  id("my.root.jvm")
   kotlin("plugin.spring")
 }
 
