@@ -3,5 +3,5 @@ plugins {
   id("my.mixin.kotest-jvm")
   id("my.mixin.spring-boot")
   id("my.spring-boot-kotlin-mixin")
-  id("my.spring-boot-app-mixin")
+  id("my.mixin.spring-boot-app")
 }

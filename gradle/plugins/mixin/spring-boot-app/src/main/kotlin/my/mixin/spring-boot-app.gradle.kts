@@ -1,3 +1,5 @@
+package my.mixin
+
 import my.mixin.springboot.app.MySpringBootAppExtension
 import my.mixin.springboot.app.MySpringBootLoggingFramework
 import my.mixin.springboot.app.internal.determineEffectiveLoggingFramework
