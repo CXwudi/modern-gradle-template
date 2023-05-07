@@ -1,3 +1,5 @@
+package my.mixin
+
 plugins {
   id("my.root.jvm")
   kotlin("jvm")
@@ -15,7 +17,8 @@ kotlin {
     compilations.all {
       kotlinOptions {
         javaParameters = true // see the same reason in jvm-root mixin
-        // kotlin will use a java tool chain version,
+        freeCompilerArgs = freeCompilerArgs + listOf("-Xjsr305=strict") // enable strict null check
+        // kotlin will use a java tool chain version, so no need to specify a java version here
         // see https://kotlinlang.org/docs/gradle-configure-project.html#gradle-java-toolchains-support
       }
     }
