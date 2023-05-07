@@ -1,3 +1,5 @@
+package my.mixin
+
 plugins {
   id("my.root.jvm")
   // note: the spring-boot-gradle-plugin is not applied as it is for setting up the spring-app,
