@@ -6,6 +6,7 @@ plugins {
 dependencies {
   implementation(kotlin("stdlib"))
   implementation(kotlin("reflect"))
+  implementation(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom"))
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm")
 }
 

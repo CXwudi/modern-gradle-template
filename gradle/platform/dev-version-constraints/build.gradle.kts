@@ -25,7 +25,7 @@ dependencies {
     // see https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html
     // to check what lib is included
     api(libs.bom.spring.boot)
-    // api("org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.6.4") // enable if spring screws up coroutines
+    api(libs.bom.coroutines) // enable if spring screws up coroutines
 
     // main build dependencies, be used in the actual app and lib build.gradle.kts
     api(libs.dep.kotlin.jvm.inline.logging)
