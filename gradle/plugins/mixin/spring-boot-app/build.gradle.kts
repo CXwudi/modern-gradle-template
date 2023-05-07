@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation("org.springframework.boot:spring-boot-gradle-plugin")
+  implementation(libs.pplugin.spring.boot)
 }

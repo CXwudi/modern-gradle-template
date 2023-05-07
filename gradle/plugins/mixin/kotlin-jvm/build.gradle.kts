@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
+  implementation(libs.pplugin.kotlin)
 }

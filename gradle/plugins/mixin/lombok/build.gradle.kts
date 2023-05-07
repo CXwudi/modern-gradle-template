@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation("io.freefair.lombok:io.freefair.lombok.gradle.plugin")
+  implementation(libs.pplugin.freefair.lombok)
 }

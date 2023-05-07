@@ -24,6 +24,7 @@ springBoot = "3.0.6"
 # bom, naming convention: bom-<name>
 bom-spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
 bom-kotest = "io.kotest:kotest-bom:5.6.1"
+
 # plugin dependencies (for both projects and settings), naming convention: s/p + plugin-<name>
 pplugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 pplugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
@@ -32,6 +33,7 @@ pplugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-pl
 pplugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.0.1"
 splugin-gradle-enterprise = "com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.13.1"
 splugin-foojay-resolver = "org.gradle.toolchains:foojay-resolver:0.5.0"
+
 # dependencies, naming convention: dep-<name>
 dep-kotlin-jvm-inline-logging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotest-extensions-spring = "io.kotest.extensions:kotest-extensions-spring:1.1.3"
@@ -47,6 +49,7 @@ graalvm-native-image = "org.graalvm.buildtools.native:0.9.21"
 # this is only used by the workaround in root build.gradle.kts
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 # if you rely on renovatebot to update your dependencies, then you don't need these plugins
+# but they are added here for demo and convience proposes
 # I recommend to use renovatebot rather than these plugins whenever possible
 ben-manes-versions = "com.github.ben-manes.versions:0.46.0"
 version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.0"

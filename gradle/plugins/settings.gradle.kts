@@ -3,7 +3,7 @@ dependencyResolutionManagement {
     gradlePluginPortal()
   }
   // currently unused, just added for demo purposes
-  includeBuild("../platform")
+//  includeBuild("../platform")
 
   versionCatalogs {
     create("libs") {

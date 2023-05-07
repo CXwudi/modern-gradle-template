@@ -2,7 +2,11 @@ dependencyResolutionManagement {
   repositories {
     gradlePluginPortal()
   }
-  includeBuild("../platform")
+  versionCatalogs {
+    create("libs") {
+      from(files("../libs.versions.toml"))
+    }
+  }
 }
 
 include("root-settings-plugins")
