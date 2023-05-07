@@ -1,5 +1,7 @@
-import my.mixin.springboot.MockFramework
-import my.mixin.springboot.MySpringBootKotlinExtension
+package my.mixin
+
+import my.mixin.springboot.kotlin.MockFramework
+import my.mixin.springboot.kotlin.MySpringBootKotlinExtension
 
 /**
  * require kotlin-mixin and spring-boot-mixin

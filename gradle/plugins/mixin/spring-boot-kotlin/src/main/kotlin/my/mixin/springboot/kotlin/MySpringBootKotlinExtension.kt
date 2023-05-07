@@ -1,4 +1,4 @@
-package my.mixin.springboot
+package my.mixin.springboot.kotlin
 
 import org.gradle.api.provider.Property
 
