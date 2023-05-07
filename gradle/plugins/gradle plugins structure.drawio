@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-04-17T19:17:18.595Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="xU2CuN71ukxky6l9ARJY" version="21.1.8" type="device">
+<mxfile host="app.diagrams.net" modified="2023-05-07T03:22:41.554Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="XQ01N5XCuRtdJHp3vRTd" version="21.2.9" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Original">
     <mxGraphModel dx="1377" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-72" value="spring-boot-kotlin-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-72" value="mixin.spring-boot-kotlin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="235" y="150" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="raQsjvOIOzGQ7u1p56Rl-2" target="raQsjvOIOzGQ7u1p56Rl-8" edge="1">
@@ -31,16 +31,16 @@
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-3" value="java-lib" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1440" y="510" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-6" value="junit5-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-6" value="mixin.junit5" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1430" y="20" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-8" value="lombok-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-8" value="mixin.lombok" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1270" y="20" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-17" value="app-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-17" value="mixin.app" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="940" y="20" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-18" value="lib-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-18" value="mixin.lib" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1110" y="20" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-24" value="All top level except existing plugins use java-root" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -122,7 +122,7 @@
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-46" value="kotlin-spring-lib" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="430" y="510" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-55" value="spring-boot-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-55" value="mixin.spring-boot" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="400" y="20" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-58" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="raQsjvOIOzGQ7u1p56Rl-46" target="raQsjvOIOzGQ7u1p56Rl-18" edge="1">
@@ -135,7 +135,7 @@
             <mxPoint x="544.4736842105262" y="210" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-25" value="kotlin-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-25" value="mixin.kotlin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="610" y="20" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="raQsjvOIOzGQ7u1p56Rl-64" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=14;endArrow=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="raQsjvOIOzGQ7u1p56Rl-27" target="raQsjvOIOzGQ7u1p56Rl-25" edge="1">
@@ -165,7 +165,7 @@
             <mxPoint x="-8" y="19" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="raQsjvOIOzGQ7u1p56Rl-80" value="kotest-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="raQsjvOIOzGQ7u1p56Rl-80" value="mixin.kotest" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="780" y="20" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VuP8gwxUQHvPvyphuHZh-0" value="existing-plugin" style="html=1;fontSize=14;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -174,13 +174,13 @@
         <mxCell id="VuP8gwxUQHvPvyphuHZh-1" value="our-own-plugin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="30" y="100" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="_B-cAE7zD9uw-gYqAtsZ-0" value="Any plugin with postfix &quot;mixin&quot; should not be used directly by main build, but used by other plugins&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="_B-cAE7zD9uw-gYqAtsZ-0" value="Any plugin with prefix &quot;mixin&quot; should not be used directly by main build, but used by other plugins&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry y="310" width="180" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="ZStENgd4W3VJ9Ewi2s_1-3" value="spring-boot-app-mixin" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="ZStENgd4W3VJ9Ewi2s_1-3" value="mixin.spring-boot-app" style="html=1;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="180" y="20" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="kxtu2S2lXpaFdeDdiCcK-5" value="&lt;h1&gt;Caution&amp;nbsp;&lt;/h1&gt;&lt;p&gt;We should only add the mixin that are basic across all possible project, do not add domain specific mixin in thsi template&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=14;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="kxtu2S2lXpaFdeDdiCcK-5" value="&lt;h1&gt;Caution&amp;nbsp;&lt;/h1&gt;&lt;p&gt;We should only add the mixin that are basic across all possible project, do not add domain specific mixin in this template&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=14;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="10" y="420" width="190" height="150" as="geometry" />
         </mxCell>
       </root>

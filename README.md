@@ -27,8 +27,7 @@ Thanks for considering my template 🙂
 Modify the project name in `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts) to your own project name,
 and globally change the group name `poc.cx.glp` to your own group name.
 The group name `poc.cx.glp` is defined
-in [`dev-version-constraints`](gradle/platform/dev-version-constraints/build.gradle.kts)
-and [`plugin-version-constraints`](gradle/platform/plugin-version-constraints/build.gradle.kts) module
+in [`dev-version-constraints`](gradle/platform/dev-version-constraints/build.gradle.kts) module
 and is referred several places in  [`gradle/plugins/`](gradle/plugins) directories.
 
 Now you can just delete the three main subproject `sample-java-lib`, `sample-kotlin-app` and `sample-kotlin-spring-app`,
