@@ -24,7 +24,7 @@ springBoot = "3.0.6"
 # bom, naming convention: bom-<name>
 bom-spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
 bom-kotest = "io.kotest:kotest-bom:5.6.2"
-bom-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.0"
+bom-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.1"
 
 # plugin dependencies (for both projects and settings), naming convention: s/p + plugin-<name>
 pplugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
