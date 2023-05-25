@@ -32,7 +32,7 @@ pplugin-kotlin-allopen = { module = "org.jetbrains.kotlin:kotlin-allopen", versi
 pplugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 # pplugin-spring-dependency-management = "io.spring.gradle:dependency-management-plugin:1.1.0"
 pplugin-freefair-lombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.0.1"
-splugin-gradle-enterprise = "com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.13.2"
+splugin-gradle-enterprise = "com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.13.3"
 splugin-foojay-resolver = "org.gradle.toolchains:foojay-resolver:0.5.0"
 
 # dependencies, naming convention: dep-<name>
