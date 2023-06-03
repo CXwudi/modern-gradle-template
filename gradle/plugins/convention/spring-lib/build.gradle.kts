@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-  implementation(project(":mixin:spring-boot"))
+  implementation(project(":mixin:spring-boot-common"))
   implementation(project(":mixin:lib"))
   implementation(project(":mixin:lombok"))
 }
