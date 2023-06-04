@@ -4,6 +4,6 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation(libs.pplugin.kotlin)
-  implementation(libs.pplugin.kotlin.allopen)
+  implementation(libs.pluginDep.kotlin)
+  implementation(libs.pluginDep.kotlinAllopen)
 }

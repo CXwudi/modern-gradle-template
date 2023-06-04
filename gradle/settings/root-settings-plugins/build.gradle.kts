@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-  implementation(libs.splugin.gradle.enterprise)
-  implementation(libs.splugin.foojay.resolver)
+  implementation(libs.settingDep.gradleEnterprise)
+  implementation(libs.settingDep.foojayResolver)
 }

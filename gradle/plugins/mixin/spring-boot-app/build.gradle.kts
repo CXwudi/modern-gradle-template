@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation(libs.pplugin.spring.boot)
+  implementation(libs.pluginDep.springBoot)
 }

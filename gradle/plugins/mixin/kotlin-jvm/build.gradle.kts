@@ -4,5 +4,5 @@ plugins {
 
 dependencies {
   implementation(project(":root"))
-  implementation(libs.pplugin.kotlin)
+  implementation(libs.pluginDep.kotlin)
 }
