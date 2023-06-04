@@ -31,7 +31,8 @@ Thanks for considering my template 🙂, just do the following things, and you a
 3. Globally change the group name `poc.cx.glp` to your own group name.
    The group name `poc.cx.glp` is defined in [`dev-version-constraints`](gradle/platform/dev-version-constraints/build.gradle.kts)
    module
-   and is referred in the [root plugin](gradle/plugins/root) and the [lib mixin plugin](gradle/plugins/mixin/lib) directories.
+   and is referred in the [root plugin](gradle/plugins/root/src/main/kotlin/my/root/jvm.gradle.kts) and
+   the [lib mixin plugin](gradle/plugins/mixin/lib/src/main/kotlin/my/mixin/lib.gradle.kts).
 4. Delete everything in [mixin plugins folder](gradle/plugins/mixin) and [convention plugins folder](gradle/plugins/convention),
    and delete everything in the [version catalog](gradle/libs.versions.toml),
    and delete everything in the `constraints` block in
