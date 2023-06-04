@@ -24,14 +24,14 @@ dependencies {
     // you can replace it with something else (like micronaut bom) if you want
     // see https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html
     // to check what lib is included
-    api(libs.bom.spring.boot)
+    api(libs.bom.springBoot)
     api(libs.bom.coroutines) // enable if spring screws up coroutines
 
     // main build dependencies, be used in the actual app and lib build.gradle.kts
-    api(libs.dep.kotlin.jvm.inline.logging)
-    api(libs.dep.kotest.extensions.spring)
-    api(libs.dep.mockito.kotlin)
+    api(libs.dep.kotlinJvmInlineLogging)
+    api(libs.dep.kotestExtensionsSpring)
+    api(libs.dep.mockitoKotlin)
     api(libs.dep.mockk)
-    api(libs.dep.spring.mockk)
+    api(libs.dep.springMockk)
   }
 }
