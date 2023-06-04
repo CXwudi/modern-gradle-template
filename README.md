@@ -25,8 +25,9 @@ This is explicitly designed to boost build performance from gradle parallel exec
 
 Thanks for considering my template 🙂, just do the following things, and you are good to go:
 
-1. Delete these sample submodules begin with `sample-`.
-2. Modify the project name in `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts) to your own project name.
+1. Delete these sample submodules begin with `sample-`, and update the logic of including submodules in the
+   root [`settings.gradle.kts`](settings.gradle.kts)
+2. Modify the project name `rootProject.name` in [`settings.gradle.kts`](settings.gradle.kts) to your own project name.
 3. Globally change the group name `poc.cx.glp` to your own group name.
    The group name `poc.cx.glp` is defined in [`dev-version-constraints`](gradle/platform/dev-version-constraints/build.gradle.kts)
    module
@@ -36,4 +37,10 @@ Thanks for considering my template 🙂, just do the following things, and you a
    and delete everything in the `constraints` block in
    the [`dev-version-constraints` platform](gradle/platform/dev-version-constraints/build.gradle.kts)
    - Tips: you can choose to not delete some stuff if you find them useful
-5. Add your own mixin plugins and convention plugins, as well as your own libraries used in the project into the version catalog
+5. Add your own mixin plugins and convention plugins, and don't forget to archive centralized version management by adding your
+   own libraries into the version catalog.
+   - Tips: if you want to use version catalog in precompiled script plugins (mixin plugins),
+     put them in the `constraints` block in
+     the [`dev-version-constraints` platform](gradle/platform/dev-version-constraints/build.gradle.kts).
+     Then in precompiled script plugins, declare the library dependency without the version
+     (e.g. `implementation("org.springframework.boot:spring-boot-starter")`).
