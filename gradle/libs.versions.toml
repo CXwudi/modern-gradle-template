@@ -15,7 +15,7 @@
 # java version is defined in my.jvm-base.gradle.kts
 # lib versions
 kotlin = "1.8.22"
-springBoot = "3.1.0"
+springBoot = "3.1.1"
 
 # plugin dep versions
 # empty for now
