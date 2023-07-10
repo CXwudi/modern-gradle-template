@@ -33,7 +33,7 @@ pluginDep-freefairLombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:
 pluginDep-springBoot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 # "io.spring.gradle:dependency-management-plugin" is unneeded because we prefer Gradle's native dependency management
 settingDep-gradleEnterprise = "com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.13.4"
-settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:0.5.0"
+settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:0.6.0"
 
 # dependencies, naming convention: dep-<name>
 dep-kotlinJvmInlineLogging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
