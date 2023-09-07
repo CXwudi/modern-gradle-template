@@ -52,5 +52,5 @@ kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 # if you rely on renovatebot to update your dependencies, then you don't need these plugins
 # but they are added here for demo and convience proposes
 # I recommend to use renovatebot rather than these plugins whenever possible
-benManesVersions = "com.github.ben-manes.versions:0.47.0"
+benManesVersions = "com.github.ben-manes.versions:0.48.0"
 versionCatalogUpdate = "nl.littlerobots.version-catalog-update:0.8.1"
