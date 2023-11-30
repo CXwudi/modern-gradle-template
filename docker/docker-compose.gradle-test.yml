@@ -4,7 +4,7 @@ version: '3.8'
 # optionally you can delete .gradle folder
 services:
   gradle:
-    image: gradle:jdk17-alpine
+    image: gradle:jdk21-alpine
     container_name: gradle-build
     volumes:
       - ..:/home/gradle/project
