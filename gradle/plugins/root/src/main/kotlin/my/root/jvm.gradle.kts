@@ -45,7 +45,9 @@ dependencies {
   // you can import our platform even if the platform itself is not resolvable here,
   // e.g. not included in this gradle/plugins build project
   // but as long as the actual main project which uses this plugin,
-  // has the root settings.gradle.kts includeBuild("our platform"),
+  // has the root settings.gradle.kts includeBuild("our platform"), (see the root settings.gradle.kts)
   // then this platform will be resolved.
+  // Btw, this is also the great workaround for issue https://github.com/gradle/gradle/issues/15383 before Gradle 8.5 was out,
+  // but it only works in dependencies {} block
   versionConstraints(platform("poc.cx.glp:dev-version-constraints"))
 }
