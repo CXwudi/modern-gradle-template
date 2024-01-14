@@ -45,3 +45,7 @@ Thanks for considering my template 🙂, just do the following things, and you a
      the [`dev-version-constraints` platform](gradle/platform/dev-version-constraints/build.gradle.kts).
      Then in precompiled script plugins, declare the library dependency without the version
      (e.g. `implementation("org.springframework.boot:spring-boot-starter")`).
+
+This template also contains two ways for updating library dependencies automatically,
+either by using renovate bot (recommended as it is the only tool that support Gradle version catalog so far),
+or running Gradle tasks defined in the root [`build.gradle.kts`](build.gradle.kts)
