@@ -1,3 +1,5 @@
+<h3>Good News: I made a simplified version of this template, <a href="https://github.com/CXwudi/modern-gradle-template-simplified">check it out</a></h3>
+
 # modern-gradle-template
 
 I learn Gradle because I want a simplified syntax to describe a multi-module project, so I payed and learned
@@ -22,6 +24,8 @@ This is explicitly designed to boost build performance from gradle parallel exec
 ![performance boost](https://s2.loli.net/2022/11/07/P6xpd5IC7HZksJu.png)
 
 ## I want to use this template
+
+**Good News**: I made a simplified version of this template, [check it out](https://github.com/CXwudi/modern-gradle-template-simplified)
 
 Thanks for considering my template 🙂, just do the following things, and you are good to go:
 
