@@ -40,11 +40,17 @@ Thanks for considering my template 🙂, just do the following things, and you a
    - Tips: you can choose to not delete some stuff if you find them useful
 5. Add your own mixin plugins and convention plugins, and don't forget to archive centralized version management by adding your
    own libraries into the version catalog.
-   - Tips: if you want to use version catalog in precompiled script plugins (mixin plugins),
+   - Tip 1: if you want to use version catalog in the `dependencies` block in precompiled script plugins (mixin or convention plugins),
      put them in the `constraints` block in
      the [`dev-version-constraints` platform](gradle/platform/dev-version-constraints/build.gradle.kts).
      Then in precompiled script plugins, declare the library dependency without the version
      (e.g. `implementation("org.springframework.boot:spring-boot-starter")`).
+     This works for Maven bom and Gradle platform as well.
+   - Tip 2: if you want to use version catalog in the `plugins` block in precompiled script plugins (mixin or convention plugins),
+     you instead let the `build.gradle.kts` (is also the one with `kotlin-dsl` applied)
+     that build the precompiled script plugin applies the version catalog.
+     Then in precompiled script plugins, declare the library dependency without the version
+     ((e.g. `id("org.springframework.boot")`)
 
 This template also contains two ways for updating library dependencies automatically,
 either by using renovate bot (recommended as it is the only tool that support Gradle version catalog so far),
