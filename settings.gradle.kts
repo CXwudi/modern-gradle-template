@@ -28,10 +28,10 @@ plugins {
   id("my.root-settings-plugins")
 }
 
-gradleEnterprise {
+develocity {
   buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"
-    termsOfServiceAgree = "yes"
+    termsOfUseUrl = "https://gradle.com/help/legal-terms-of-use"
+    termsOfUseAgree = "yes"
   }
 }
 
