@@ -29,7 +29,7 @@ bom-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.9.0"
 # plugin dependencies (for both projects and settings), naming convention: pluginDep/settingDep + -<nameInCamelCase>
 pluginDep-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 pluginDep-kotlinAllopen = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
-pluginDep-freefairLombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.10.2"
+pluginDep-freefairLombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:8.11"
 pluginDep-springBoot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 # "io.spring.gradle:dependency-management-plugin" is unneeded because we prefer Gradle's native dependency management
 settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradle.plugin:3.18.2"
