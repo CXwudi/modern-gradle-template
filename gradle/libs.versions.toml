@@ -46,7 +46,7 @@ dep-springMockk = "com.ninja-squad:springmockk:4.0.2"
 # plugins that are used in main build but not in precompiled script plugins
 # when multiple main builds have similar plugin settings on a plugin here,
 # then it have to be moved to a separated precompiled script plugin
-graalvmNative = "org.graalvm.buildtools.native:0.10.5"
+graalvmNative = "org.graalvm.buildtools.native:0.10.6"
 # this is only used by the workaround in root build.gradle.kts
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 # if you rely on renovatebot to update your dependencies, then you don't need these plugins
