@@ -53,4 +53,4 @@ kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 # but they are added here for demo and convience proposes
 # I recommend to use renovatebot rather than these plugins whenever possible
 benManesVersions = "com.github.ben-manes.versions:0.52.0"
-versionCatalogUpdate = "nl.littlerobots.version-catalog-update:0.8.5"
+versionCatalogUpdate = "nl.littlerobots.version-catalog-update:1.0.0"
