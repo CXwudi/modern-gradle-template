@@ -1,4 +1,5 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import nl.littlerobots.vcu.plugin.resolver.VersionSelectors
 
 plugins {
   // if you don't want to do set kotlin.pluginLoadedInMultipleProjects.ignore=true in gradle.properties file,
@@ -26,13 +27,9 @@ tasks.withType<DependencyUpdatesTask> {
 }
 
 versionCatalogUpdate {
-  sortByKey.set(false)
+  versionSelector(VersionSelectors.STABLE)
+  sortByKey = false
   keep {
-    // keep versions without any library or plugin reference
-    keepUnusedVersions.set(true)
-    // keep all libraries that aren't used in the project
-    keepUnusedLibraries.set(true)
-    // keep all plugins that aren't used in the project
-    keepUnusedPlugins.set(true)
+    keepUnusedVersions = true
   }
 }
