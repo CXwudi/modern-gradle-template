@@ -23,7 +23,7 @@ springBoot = "3.5.6"
 # unless there is a keyword conflict or the name is wired
 # bom, naming convention: bom-<name>
 bom-springBoot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
-bom-kotest = "io.kotest:kotest-bom:5.9.1"
+bom-kotest = "io.kotest:kotest-bom:6.0.3"
 bom-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.10.2"
 
 # plugin dependencies (for both projects and settings), naming convention: pluginDep/settingDep + -<nameInCamelCase>
