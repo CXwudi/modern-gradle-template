@@ -40,7 +40,7 @@ dep-kotlinJvmInlineLogging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotestExtensionsSpring = "io.kotest.extensions:kotest-extensions-spring:1.3.0"
 dep-mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:6.1.0"
 dep-mockk = "io.mockk:mockk:1.14.6"
-dep-springMockk = "com.ninja-squad:springmockk:4.0.2"
+dep-springMockk = "com.ninja-squad:springmockk:5.0.1"
 
 [plugins]
 # plugins that are used in main build but not in precompiled script plugins
