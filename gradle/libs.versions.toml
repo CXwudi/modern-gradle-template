@@ -32,7 +32,7 @@ pluginDep-kotlinAllopen = { module = "org.jetbrains.kotlin:kotlin-allopen", vers
 pluginDep-freefairLombok = "io.freefair.lombok:io.freefair.lombok.gradle.plugin:9.1.0"
 pluginDep-springBoot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 # "io.spring.gradle:dependency-management-plugin" is unneeded because we prefer Gradle's native dependency management
-settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradle.plugin:4.2.2"
+settingDep-gradleEnterprise = "com.gradle.develocity:com.gradle.develocity.gradle.plugin:4.3"
 settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:1.0.0"
 
 # dependencies, naming convention: dep-<nameInCamelCase>
