@@ -38,7 +38,7 @@ settingDep-foojayResolver = "org.gradle.toolchains:foojay-resolver:1.0.0"
 # dependencies, naming convention: dep-<nameInCamelCase>
 dep-kotlinJvmInlineLogging = "com.github.CXwudi:kotlin-jvm-inline-logging:1.0.1"
 dep-kotestExtensionsSpring = "io.kotest.extensions:kotest-extensions-spring:1.3.0"
-dep-mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:6.1.0"
+dep-mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:6.2.0"
 dep-mockk = "io.mockk:mockk:1.14.7"
 dep-springMockk = "com.ninja-squad:springmockk:5.0.1"
 
